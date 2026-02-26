@@ -19,7 +19,8 @@
 body{
     margin:0;
     padding:0;
-    background: linear-gradient(135deg,#ECC17D,#f4d29c,#ECC17D);
+
+background: linear-gradient(135deg, #f6d365, #fda085);
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -102,7 +103,6 @@ hr{
     opacity:0.4;
 }
 
-
 #github-button {
     display: inline-block;
     background: linear-gradient(45deg, #0072ff, #5a3e36);
@@ -110,7 +110,7 @@ hr{
     padding: 6px 20px;
     font-weight: 600;
     font-size: 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0,114,255,0.5);
     transition: all 0.3s ease;
@@ -119,6 +119,32 @@ hr{
     user-select: none;
     margin-bottom: 15px;
 
+}
+
+/* Glow effect */
+.github-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: all 0.6s ease;
+}
+
+.github-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.github-btn:hover::before {
+    left: 100%;
 }
 
 #github-button:hover {
@@ -133,17 +159,17 @@ hr{
     display: inline-block;
     background: linear-gradient(45deg, #ff4d4d, #990000);
     color: white;
-    padding: 10px 25px; /* padding kam kiya */
+    padding: 10px 25px; 
     font-weight: 700;
-    font-size: 16px; /* font size thoda chhota kiya */
-    border-radius: 20px; /* corner thoda chhota kiya */
+    font-size: 16px; 
+    border-radius: 15px; 
     text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0,114,255,0.5); /* shadow thoda kam */
+    box-shadow: 0 4px 10px rgba(0,114,255,0.5); 
     transition: all 0.3s ease;
-    letter-spacing: 1px; /* spacing kam kiya */
+    letter-spacing: 1px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select: none;
-    margin-bottom: 15px; /* margin thoda kam */
+    margin-bottom: 15px; 
 }
 
 #linkedin-button:hover {
@@ -163,7 +189,7 @@ font-weight:900;
     padding: 10px 25px;
     font-weight: 700;
     font-size: 16px;
-    border-radius: 20px;
+    border-radius: 15px;
     text-decoration: none;
     box-shadow: 0 4px 10px rgba(0,114,255,0.5);
     transition: all 0.3s ease;
@@ -219,12 +245,57 @@ body > a#header:last-child {
 }
 
 
+
+
+body {
+  animation: typing 2s ease-in;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
+
+
+#clock {
+  font-size: 22px;
+  
+  color: #5a3e36;
+  margin-top: 20px;
+text-align:right;
+padding-right:20px;
+text-decoration:underline;
+font-weight:900;
+}
+
+
+
+
 </style>
+
+
+<script>
+function updateTime() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    document.getElementById("clock").innerText = time;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+
+
+
+
+
+
 
 </head>
 <body>
-
-
 <a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 <a href="about.html" id="header"> About Me </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
@@ -232,6 +303,9 @@ body > a#header:last-child {
 
 <a href="skills.html" id="header"> Skills </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+<div id="clock"></div>
 
 <hr>
 
@@ -258,7 +332,7 @@ I have created many projects based on the Python library called Tkinter that can
 <br>
 
 <div style="text-align:center; margin-top:20px; display:flex; justify-content:center; gap:20px;">
-  <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="github-button">Visit My GitHub Profile</a>
+  <a href="https://github.com/TahaAnsari5359" target="_blank" id="github-button">Visit My GitHub Profile</a>
   <a href="https://www.linkedin.com/" target="_blank" id="linkedin-button">Visit My LinkedIn Profile</a>
   <a href="tahacvanther.pdf" target="_blank" id="cv-button">Resume</a>
 </div>
@@ -267,7 +341,7 @@ I have created many projects based on the Python library called Tkinter that can
 
 
 </body>
-<html>
+</html>
 
 
 
