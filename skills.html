@@ -1,231 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About Me</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #ECC17D;
-      padding-top: 20px;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #2c2c2c;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Skills</title>
 
-    
-    body > a#header {
-      color: #F80626;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 18px;
-      letter-spacing: 1.1px;
-      padding: 8px 18px;
-      margin: 0 12px;
-      border-radius: 6px;
-      transition: all 0.3s ease;
-      display: inline-block;
-    }
-
-    body > a#header:hover {
-      color: #fff;
-      background: #0072ff;
-      box-shadow: 0 6px 12px rgba(0, 114, 255, 0.7);
-      transform: scale(1.1);
-      text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-    }
-
-    body > a#header:first-child {
-      margin-left: 50px;
-    }
-
-    body > a#header:last-child {
-      margin-right: 50px;
-    }
-
-    hr {
-      border: none;
-      height: 3px;
-      margin: 40px auto;
-      width: 80%;
-      background: linear-gradient(to right, transparent, #5a3e36, #0072ff, #5a3e36, transparent);
-      border-radius: 10px;
-    }
-
-    h1 {
-      font-size: 32px;
-      color: #5a3e36;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-      margin-bottom: 10px;
-    }
-
-    center {
-      margin: 40px 20px 60px 20px;
-    }
-
-    p.about-text {
-      max-width: 700px;
-      margin: 0 auto;
-      
-      font-size: 20px;
-      line-height: 1.8;
-      font-weight: 600;
-      white-space: pre-line;
-      color: #3c3c3c;
-      cursor: default;
-      transition: color 0.3s ease, font-size 0.3s ease;
-    }
-
-    p.about-text:hover {
-      font-size: 22px;
-      color: purple;
-      text-decoration: underline;
-      
-    }
+<style>
 
 
-#content {
-    background: white;
-    padding: 30px 40px;
-    margin: 40px auto;
-    max-width: 700px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    transition: transform 0.4s ease;
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f6d365, #fda085);
 }
 
-#content:hover {
-    transform: scale(1.01);
-background-color:#B3E7C2;
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  color: #F80626;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #0072ff;
+  text-shadow: 0px 0px 8px rgba(0,114,255,0.6);
+}
+
+.main {
+  width: 85%;
+  max-width: 700px;
+  margin: 60px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+ transition: 0.3s ease;
+}
+
+.main:hover{
+background: #B8C8E8;
+transform: scale(1.1);
+transition: 0.3s ease;
 }
 
 
 
-
-.block {
-  width: 0;                
-  height: 100%;
-  line-height: 30px;
+h2 {
   text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+
+.skill {
+  margin-bottom: 30px;
+}
+
+.skill-name {
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.skill-name:hover{
+font-weight:900;
+text-decoration:underline;
+}
+
+
+
+
+.progress {
+  width: 100%;
+  background: #eee;
+  height: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  text-align: center;
+  line-height: 25px;
   color: white;
   font-weight: bold;
   border-radius: 20px;
-  transition: width 1s ease;   
-  color:black;
+  animation: load 2s ease forwards;
+}
+
+
+.python { width: 90%; background: #28A745; }
+.cpp { width: 50%; background: #DC3545; }
+.html { width: 70%; background:  #3776AB;}
+.css { width: 60%; background: #FD7E14; }
+
+
+@keyframes load {
+  from { width: 0; }
+}
+
+
+body > a#header {
+    color: #F80626;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    padding: 8px 18px;
+    margin: 0 12px;  
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+
+
+body > a{
+    margin-top:20px;
+}
+
+body{
+    padding-top:20px;  
+}
+
+body > a#header:hover {
+    color: #fff;
+    background: #0072ff;
+    box-shadow: 0 6px 12px rgba(0,114,255,0.7);
+    transform: scale(1.1);
+    text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
+
+body > a#header:first-child {
+    margin-left: 50px; 
+}
+
+body > a#header:last-child {
+    margin-right: 50px; 
 }
 
 
 
 
-.container1:hover .block {
-  width: 90%;
-  background-color: #007BFF;
-color:white;
+a#header{
+    color:#F80626;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.3s ease;
 }
 
-
-.container2:hover .block {
-  width: 50%;
-  background-color: #DC3545;
-color:white;
-}
-
-
-.container3:hover .block {
-  width: 78%;
-  background-color: #FD7E14;
-color:white;
-}
-
-
-.container4:hover .block {
-  width: 80%;
-  background-color: #28A745;
-color:white;
+a#header:hover{
+    color:#0072ff;
+    text-shadow:0px 0px 8px rgba(0,114,255,0.6);
 }
 
 
 
-h3{
-color:black;
-font-size:25px;
-
-}
-
-h3.hover{
-font-weight:bold;
 
 
 
-}
-
-
-
-#dividing{
-    border:none;
-    height:4px;
-    margin:40px auto;
-    width:100%;
-    background:linear-gradient(to right,transparent,#5a3e36,#0072ff,#5a3e36,transparent);
-    border-radius:10px;
-}
-
-
-  </style>
+</style>
 </head>
+
 <body>
 
-  <a href="index.html" id="header">home</a>
-  <a href="about.html" id="header">About Me</a>
-  <a href="mailto:tahairfanansari@gmail.com" id="header">Contact</a>
-  <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header">visit github</a>
+<a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<a href="about.html" id="header"> About Me </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
-  <hr>
+<a href="mailto:tahairfanansari@gmail.com" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
-<center>
-<u><h3>PYTHON</h3></u>
-<div class="container1">
-  <div class="block python">90%</div>
+<a href="skills.html" id="header"> Skills </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+
+<div class="main">
+  <strong><b><u><h2>My Skills</h2></strong></b></u>
+
+  <div class="skill">
+    <div class="skill-name">Python</div>
+    <div class="progress">
+      <div class="progress-bar python">90%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">C++</div>
+    <div class="progress">
+      <div class="progress-bar cpp">50%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">HTML</div>
+    <div class="progress">
+      <div class="progress-bar html">70%</div>
+    </div>
+  </div>
+
+  <div class="skill">
+    <div class="skill-name">CSS</div>
+    <div class="progress">
+      <div class="progress-bar css">60%</div>
+    </div>
+  </div>
+
 </div>
 
-
-<hr id="dividing">
-
-
-
-
-<u><h3>C++</h3></u>
-<div class="container2">
-  <div class="block cpp">50%</div>
-</div>
-
-
-<hr id="dividing">
-
-
-<u><h3>HTML</h3></u>
-<div class="container3">
-  <div class="block html">78%</div>
-</div>
-
-<hr id="dividing">
-
-
-<u><h3>CSS</h3></u>
-<div class="container4">
-  <div class="block css">80%</div>
-</div>
-</center>
-
-
-</p>
-</div>
-</center>
 </body>
-
 </html>
-
-
-
-
