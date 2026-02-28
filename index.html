@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 body{
     margin:0;
     padding:0;
@@ -53,12 +49,37 @@ h1{
     color:#5a3e36;
     text-shadow:2px 2px 5px rgba(0,0,0,0.2);
     margin-top:20px;
+font-family: Algerian, serif;
+
+font-weight:700;
+    background: linear-gradient(90deg, 
+                #b30000,  
+                #006400,  
+                #00008b,  
+                #b30000); 
+    background-size: 600%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s linear infinite;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
+
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+
 
 h1:hover{
 text-decoration:underline;
 
 }
+
+
+
 
 
 
@@ -68,6 +89,10 @@ p{
     color:#2c2c2c;
 }
 
+
+
+
+
 #content{
     margin-left:50px;
     margin-right:50px;
@@ -76,8 +101,11 @@ p{
     border-radius:15px;
     box-shadow:0 10px 25px rgba(0,0,0,0.15);
     transition:0.4s ease;
+max-width: 800px;
+  margin: 30px auto;
     
 }
+
 
 #content:hover{
     transform:scale(1.01);
@@ -86,6 +114,9 @@ text-decoration: underline;
 background-color:#EDEA95;
 font-weight:900;
 }
+
+
+
 
 
 #dividing{
@@ -105,8 +136,8 @@ hr{
 
 #github-button {
     display: inline-block;
-    background: linear-gradient(45deg, #0072ff, #5a3e36);
-    color: white;
+    background: linear-gradient(135deg, #6e5494, #f6f6f6);
+    color: black;
     padding: 6px 20px;
     font-weight: 600;
     font-size: 15px;
@@ -148,16 +179,17 @@ hr{
 }
 
 #github-button:hover {
-    background: linear-gradient(45deg, #5a3e36, #0072ff);
+    background: linear-gradient(135deg, #f6f6f6, #6e5494); 
     box-shadow: 0 10px 20px rgba(90,62,54,0.8);
     transform: translateY(-3px) scale(1.05);
-    color: #fff;
+    color: black;
     font-weight:900;
 }
 
 #linkedin-button {
     display: inline-block;
-    background: linear-gradient(45deg, #ff4d4d, #990000);
+    
+background: linear-gradient(45deg, #0072b1, #00a0dc);
     color: white;
     padding: 10px 25px; 
     font-weight: 700;
@@ -173,7 +205,8 @@ hr{
 }
 
 #linkedin-button:hover {
-    background: linear-gradient(45deg, #990000, #ff4d4d);
+    
+background: linear-gradient(45deg, #00a0dc, #0072b1);
     box-shadow: 0 10px 20px rgba(0,119,181,0.8);
     transform: translateY(-3px) scale(1.05);
     color: #fff;
@@ -184,7 +217,7 @@ font-weight:900;
 
 #cv-button {
     display: inline-block;
-    background: linear-gradient(45deg, #00ff7f, #006400);
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
     color: white;
     padding: 10px 25px;
     font-weight: 700;
@@ -200,14 +233,12 @@ font-weight:900;
 }
 
 #cv-button:hover {
-    background: linear-gradient(45deg, #006400, #00ff7f);
+    background: linear-gradient(135deg, #ff4500, #ff7f50);
     box-shadow: 0 10px 20px rgba(0,119,181,0.8);
     transform: translateY(-3px) scale(1.05);
     color: #fff;
 font-weight:900;
 }
-
-
 
 
 
