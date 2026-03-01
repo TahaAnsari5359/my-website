@@ -1,0 +1,268 @@
+<html>
+<head>
+<title> Contact Me </title>
+
+
+<style>
+
+
+#dividing {
+    height: 3px;
+    width: 80%;
+    margin: 40px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #4da6ff,
+        #ffffff,
+        #4da6ff,
+        transparent
+    );
+    border-radius: 50px;
+}
+
+
+
+    border-radius:10px;
+}
+hr{
+    border:none;
+    height:2px;
+    background:red;
+    opacity:0.4;
+}
+
+
+a#header{
+    color:#F80626;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.3s ease;
+}
+
+a#header:hover{
+    color:#0072ff;
+    text-shadow:0px 0px 8px rgba(0,114,255,0.6);
+}
+
+
+body > a{
+    margin-top:20px;
+
+}
+
+body{
+    padding-top:20px;  
+
+}
+
+
+body > a#header {
+    color: #F80626;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1.1px;
+    text-decoration: none;
+    padding: 8px 18px;
+    margin: 0 12px;  
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+body > a#header:hover {
+    color: #fff;
+    background: #0072ff;
+    box-shadow: 0 6px 12px rgba(0,114,255,0.7);
+    transform: scale(1.1);
+    text-shadow: 0 0 6px rgba(255,255,255,0.8);
+}
+
+
+body > a#header:first-child {
+    margin-left: 50px; 
+}
+
+body > a#header:last-child {
+    margin-right: 50px; 
+}
+
+
+
+
+
+
+body{
+  margin:0;
+  padding:40px 50px 0 50px; 
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #000000, #001f3f, #0072ff);
+  color:white;
+}
+
+h1{
+  margin-top:40px;
+  font-size:32px;
+font-family: Algerian, serif;
+text-decoration:underline;
+}
+
+form{
+
+background-color:#37A3AF;
+  padding:30px;
+  width:350px;
+  border-radius:15px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+  border:1px solid rgba(255,255,255,0.1);
+transition: transform 0.4s ease, 
+              box-shadow 0.4s ease, 
+              border 0.4s ease;
+}
+
+
+form:hover{
+transform:scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+  border:8px solid rgba(255,255,255,0.1);
+background-color:#337980;
+}
+
+
+
+input, textarea{
+  width:100%;
+  padding:10px;
+  margin-top:5px;
+  border-radius:8px;
+  border:1px solid #333;
+  background:#1e1e1e;
+  color:white;
+  font-size:14px;
+font-weight:900;
+}
+
+input:hover,textarea:hover{
+background-color:#AAB0A7;
+color:black;
+}
+
+
+
+input:focus, textarea:focus{
+  outline:none;
+  border-color:#003366;;
+  box-shadow:0 0 8px red;
+}
+
+textarea{
+  height:100px;
+  resize:none;
+}
+
+button{
+background: linear-gradient(135deg, #872A91, #912A68, #912A34);
+  color:white;
+  padding:10px 20px;
+  border:none;
+  border-radius:20px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  box-shadow:0 5px 15px rgba(0,114,255,0.6);
+background: linear-gradient(135deg,  #912A34, #912A68,#872A91);
+}
+
+
+
+
+
+h1 {
+  animation: fadeSlideDown 1s ease forwards;
+}
+
+form {
+  animation: fadeSlideDown 1.2s ease forwards;
+}
+
+
+
+@keyframes fadeSlideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+<a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<a href="about.html" id="header"> About Me </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+
+
+<a href="skills.html" id="header"> Skills </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+<a href="contacts.html" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+
+<hr>
+
+
+
+
+
+
+<center>
+<h1>
+Contact Me
+</h1>
+
+<br>
+
+
+<form action="https://formsubmit.co/tahairfanansari@gmail.com" method="POST">
+  <b>Name:</b> <input type="text" name="name" placeholder="Your Name" required><br><br>
+  <b>Email Id:</b> <input type="email" name="email" placeholder="Your Email" required><br><br>
+<b>Subject:</b> <input type="text" name="_subject" placeholder="Enter Subject"><br><br>
+  <b>Message:</b> <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+  <b><button type="submit">Send Message</button></b>
+</center>
+
+</form>
+
+
+
+
+</body>
+</html>
