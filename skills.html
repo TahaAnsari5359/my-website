@@ -1,112 +1,266 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Skills</title>
+
+
+
+
+<title> Taha's Website </title>
 
 <style>
 
 
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f6d365, #fda085);
+
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', sans-serif;
+
+    background-image: url("bg_image.png"); /* same file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+a#header{
+    color:#F80626;
+    text-decoration:none;
+    font-weight:bold;
+    letter-spacing:1px;
+    transition:0.3s ease;
 }
 
-.navbar a {
-  color: #F80626;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: 0.3s ease;
-}
-
-.navbar a:hover {
-  color: #0072ff;
-  text-shadow: 0px 0px 8px rgba(0,114,255,0.6);
-}
-
-.main {
-  width: 85%;
-  max-width: 700px;
-  margin: 60px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
- transition: 0.3s ease;
-}
-
-.main:hover{
-background: #B8C8E8;
-transform: scale(1.1);
-transition: 0.3s ease;
+a#header:hover{
+    color:#0072ff;
+    text-shadow:0px 0px 8px rgba(0,114,255,0.6);
 }
 
 
+body > a{
+    margin-top:20px;
+}
 
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
+body{
+    padding-top:20px;  
 }
 
 
-.skill {
-  margin-bottom: 30px;
+h1{
+    font-size:38px;
+    color:#5a3e36;
+    text-shadow:2px 2px 5px rgba(0,0,0,0.2);
+    margin-top:20px;
+font-family: Algerian, serif;
+
+font-weight:700;
+    background: linear-gradient(90deg, 
+                #00ffff,  
+                #bb86fc,  
+                #00ff88,  
+                #ff9800); 
+    background-size: 600%; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 5s linear infinite;
+    letter-spacing: 2px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.skill-name {
-  margin-bottom: 8px;
-  font-weight: 600;
+
+@keyframes gradientMove {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
 }
 
-.skill-name:hover{
-font-weight:900;
+
+
+h1:hover{
 text-decoration:underline;
+
 }
 
 
 
 
-.progress {
-  width: 100%;
-  background: #eee;
-  height: 25px;
-  border-radius: 20px;
-  overflow: hidden;
-}
 
-.progress-bar {
-  height: 100%;
-  text-align: center;
-  line-height: 25px;
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  animation: load 2s ease forwards;
+
+p{
+    font-size:20px;
+    line-height:1.8;
+    color:#2c2c2c;
 }
 
 
-.python { width: 90%; background: #28A745; }
-.cpp { width: 50%; background: #DC3545; }
-.html { width: 70%; background:  #3776AB;}
-.css { width: 60%; background: #FD7E14; }
 
 
-@keyframes load {
-  from { width: 0; }
+
+#content{
+    margin-left:50px;
+    margin-right:50px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+    transition:0.4s ease;
+max-width: 800px;
+  margin: 30px auto;
+    
 }
+
+
+#content:hover{
+    transform:scale(1.01);
+color:#2C0EC2;
+text-decoration: underline;
+background-color:#EDEA95;
+font-weight:900;
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+  border:8px solid rgba(255,255,255,0.1);
+
+}
+
+
+.line:hover{
+color:#2C0EC2;
+text-decoration: underline;
+}
+
+
+
+#dividing {
+    height: 3px;
+    width: 80%;
+    margin: 40px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #4da6ff,
+        #ffffff,
+        #4da6ff,
+        transparent
+    );
+    border-radius: 50px;
+}
+
+
+
+
+hr{
+    border:none;
+    height:2px;
+    background:white;
+    opacity:0.4;
+}
+
+#github-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #6e5494, #f6f6f6);
+    color: black;
+    padding: 6px 20px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0,114,255,0.5);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin-bottom: 15px;
+
+}
+
+
+.github-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transition: all 0.6s ease;
+}
+
+.github-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.github-btn:hover::before {
+    left: 100%;
+}
+
+#github-button:hover {
+    background: linear-gradient(135deg, #f6f6f6, #6e5494); 
+    box-shadow: 0 10px 20px rgba(90,62,54,0.8);
+    transform: translateY(-3px) scale(1.05);
+    color: black;
+    font-weight:900;
+}
+
+#linkedin-button {
+    display: inline-block;
+    
+background: linear-gradient(45deg, #0072b1, #00a0dc);
+    color: white;
+    padding: 10px 25px; 
+    font-weight: 700;
+    font-size: 16px; 
+    border-radius: 15px; 
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,114,255,0.5); 
+    transition: all 0.3s ease;
+    letter-spacing: 1px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin-bottom: 15px; 
+}
+
+#linkedin-button:hover {
+    
+background: linear-gradient(45deg, #00a0dc, #0072b1);
+    box-shadow: 0 10px 20px rgba(0,119,181,0.8);
+    transform: translateY(-3px) scale(1.05);
+    color: #fff;
+font-weight:900;
+}
+
+
+
+#cv-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff7f50, #ff4500);
+    color: white;
+    padding: 10px 25px;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,114,255,0.5);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    user-select: none;
+    margin-bottom: 15px;
+}
+
+#cv-button:hover {
+    background: linear-gradient(135deg, #ff4500, #ff7f50);
+    box-shadow: 0 10px 20px rgba(0,119,181,0.8);
+    transform: translateY(-3px) scale(1.05);
+    color: #fff;
+font-weight:900;
+}
+
+
+
+
 
 
 body > a#header {
@@ -120,16 +274,6 @@ body > a#header {
     border-radius: 6px;
     transition: all 0.3s ease;
     display: inline-block;
-}
-
-
-
-body > a{
-    margin-top:20px;
-}
-
-body{
-    padding-top:20px;  
 }
 
 body > a#header:hover {
@@ -152,55 +296,64 @@ body > a#header:last-child {
 
 
 
-a#header{
-    color:#F80626;
-    text-decoration:none;
-    font-weight:bold;
-    letter-spacing:1px;
-    transition:0.3s ease;
+body {
+  animation: typing 2s ease-in;
 }
 
-a#header:hover{
-    color:#0072ff;
-    text-shadow:0px 0px 8px rgba(0,114,255,0.6);
-}
-
-
-#dividing {
-    height: 5px;
-    width: 80%;
-    margin: 40px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #4da6ff,
-        #ffffff,
-        #4da6ff,
-        transparent
-    );
-    border-radius: 50px;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
 
 
 
-hr{
-    border:none;
-    height:2px;
-    background:#4B3FBF;
-    opacity:0.8;
+#clock {
+  font-size: 22px;
+  
+  color: white;
+  margin-top: 20px;
+text-align:right;
+padding-right:20px;
+text-decoration:underline;
+font-weight:900;
 }
 
 
 
 
 </style>
-</head>
 
+
+<script>
+function updateTime() {
+    const now = new Date();
+    const time = now.toLocaleTimeString();
+    document.getElementById("clock").innerText = time;
+}
+
+setInterval(updateTime, 1000);
+updateTime();
+</script>
+
+
+
+
+
+
+
+
+</head>
 <body>
 
+
+
+
+
+
+
 <a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-<a href="about.html" id="header"> About</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<a href="about.html" id="header"> About </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
 
 
@@ -210,41 +363,85 @@ hr{
 
 <a href="contacts.html" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
+
+<div id="clock"></div>
+
 <hr>
 
+<center>
 
-<div class="main">
-  <strong><b><u><h2>My Skills</h2></strong></b></u>
+<h1>Taha Ansari | FUTURE SOFTWARE DEVELOPER</h1>
 
-  <div class="skill">
-    <div class="skill-name">Python</div>
-    <div class="progress">
-      <div class="progress-bar python">90%</div>
-    </div>
-  </div>
+<hr id="dividing">
 
-  <div class="skill">
-    <div class="skill-name">C++</div>
-    <div class="progress">
-      <div class="progress-bar cpp">50%</div>
-    </div>
-  </div>
+<div id="content">
 
-  <div class="skill">
-    <div class="skill-name">HTML</div>
-    <div class="progress">
-      <div class="progress-bar html">70%</div>
-    </div>
-  </div>
+  <p class="line"><strong>Hi, I’m Taha Ansari.</strong></p>
 
-  <div class="skill">
-    <div class="skill-name">CSS</div>
-    <div class="progress">
-      <div class="progress-bar css">60%</div>
-    </div>
-  </div>
+  <p class="line">
+    I am a student who is passionate about Computer Science and coding. 
+    I enjoy learning how websites and software are built.
+  </p>
+
+  <p class="line">
+    Coding makes me excited because it allows me to create new things and solve problems.
+  </p>
+
+  <p class="line">
+    I am currently learning HTML, CSS, Python, C++ and other programming languages step by step.
+  </p>
+
+  <p class="line">
+    My goal is to become a skilled software developer in the future.
+  </p>
+
+  <p class="line">
+    I believe in learning continuously and improving myself every day.
+  </p>
+
+  <p class="line">
+    Through this website, I want to share my journey, my projects, and my progress 
+    as I grow in the world of technology.
+  </p>
+
+  <p class="line">
+    I have created many projects based on the Python library called Tkinter 
+    that can create GUI applications.
+  </p>
+
+  <p class="line">
+    If you want to rate my applications, you can visit my GitHub profile on the Home page.
+  </p>
 
 </div>
 
+</center>
+
+<br>
+
+<div style="text-align:center; margin-top:20px; display:flex; justify-content:center; gap:20px;">
+  <a href="https://github.com/TahaAnsari5359" target="_blank" id="github-button">Visit My GitHub Profile</a>
+  <a href="https://www.linkedin.com/" target="_blank" id="linkedin-button">Visit My LinkedIn Profile</a>
+  <a href="tahacvanther.pdf" target="_blank" id="cv-button">Resume</a>
+</div>
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
