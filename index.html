@@ -11,15 +11,16 @@
 
 
 
-
 body{
     margin:0;
     padding:0;
-
-background: linear-gradient(135deg, #f6d365, #fda085);
     font-family: 'Segoe UI', sans-serif;
-}
 
+    background-image: url("bg_image.png"); /* same file name */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 a#header{
     color:#F80626;
@@ -53,10 +54,10 @@ font-family: Algerian, serif;
 
 font-weight:700;
     background: linear-gradient(90deg, 
-                #b30000,  
-                #006400,  
-                #00008b,  
-                #b30000); 
+                #00ffff,  
+                #bb86fc,  
+                #00ff88,  
+                #ff9800); 
     background-size: 600%; 
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -113,24 +114,35 @@ color:#2C0EC2;
 text-decoration: underline;
 background-color:#EDEA95;
 font-weight:900;
+  box-shadow:0 15px 35px rgba(0,0,0,0.6);
+  border:8px solid rgba(255,255,255,0.1);
 }
 
 
 
 
-
-#dividing{
-    border:none;
-    height:4px;
-    margin:40px auto;
-    width:100%;
-    background:linear-gradient(to right,transparent,#5a3e36,#0072ff,#5a3e36,transparent);
-    border-radius:10px;
+#dividing {
+    height: 3px;
+    width: 80%;
+    margin: 40px auto;
+    background: linear-gradient(
+        to right,
+        transparent,
+        #4da6ff,
+        #ffffff,
+        #4da6ff,
+        transparent
+    );
+    border-radius: 50px;
 }
+
+
+
+
 hr{
     border:none;
     height:2px;
-    background:#5a3e36;
+    background:white;
     opacity:0.4;
 }
 
@@ -152,7 +164,7 @@ hr{
 
 }
 
-/* Glow effect */
+
 .github-btn::before {
     content: "";
     position: absolute;
@@ -293,7 +305,7 @@ body {
 #clock {
   font-size: 22px;
   
-  color: #5a3e36;
+  color: white;
   margin-top: 20px;
 text-align:right;
 padding-right:20px;
@@ -327,14 +339,24 @@ updateTime();
 
 </head>
 <body>
+
+
+
+
+
+
+
 <a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 <a href="about.html" id="header"> About Me </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
-<a href="mailto:tahairfanansari@gmail.com" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
 
 <a href="skills.html" id="header"> Skills </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
 
 <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
+<a href="contacts.html" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+
 
 <div id="clock"></div>
 
@@ -364,7 +386,7 @@ I have created many projects based on the Python library called Tkinter that can
 
 <div style="text-align:center; margin-top:20px; display:flex; justify-content:center; gap:20px;">
   <a href="https://github.com/TahaAnsari5359" target="_blank" id="github-button">Visit My GitHub Profile</a>
-  <a href="https://www.linkedin.com/in/taha-ansari-72972a383/" target="_blank" id="linkedin-button">Visit My LinkedIn Profile</a>
+  <a href="https://www.linkedin.com/" target="_blank" id="linkedin-button">Visit My LinkedIn Profile</a>
   <a href="tahacvanther.pdf" target="_blank" id="cv-button">Resume</a>
 </div>
 
@@ -373,7 +395,6 @@ I have created many projects based on the Python library called Tkinter that can
 
 </body>
 </html>
-
 
 
 
