@@ -15,7 +15,7 @@ body {
     padding-top: 20px;
     font-family: Arial, sans-serif;
     text-align: center; 
-    animation: gradientMove 15s ease infinite;
+    animation: gradientSwipe 20s ease infinite;
 }
 
 
@@ -99,18 +99,23 @@ transform: scale(1.05);
     filter: brightness(1.1);
 }
 
-@keyframes gradientMove {
+@keyframes gradientSwipe {
     0% {
         background-position: 0% 50%;
     }
+    25% {
+        background-position: 50% 100%;
+    }
     50% {
         background-position: 100% 50%;
+    }
+    75% {
+        background-position: 50% 0%;
     }
     100% {
         background-position: 0% 50%;
     }
 }
-
 
 </style>
 
@@ -155,3 +160,4 @@ transform: scale(1.05);
 </body>
 
 </html>
+
