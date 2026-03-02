@@ -15,6 +15,7 @@ body {
     padding-top: 20px;
     font-family: Arial, sans-serif;
     text-align: center; 
+    animation: gradientMove 15s ease infinite;
 }
 
 
@@ -98,7 +99,17 @@ transform: scale(1.05);
     filter: brightness(1.1);
 }
 
-
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
 
 
 </style>
@@ -142,4 +153,5 @@ transform: scale(1.05);
 <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects" target="_blank_">more projects</a>
     </center>
 </body>
+
 </html>
