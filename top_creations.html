@@ -80,7 +80,7 @@ div img:hover {
 }
 
 
-.btn{
+a{
     display: inline-block;
     text-decoration: none;
     background-color:black;
@@ -93,29 +93,18 @@ div img:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
+.btn{
+    background-color:blue;
+    color: black;
+    transition: 0.3s ease;
+}
+    
 .btn:hover{
 transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     filter: brightness(1.1);
 }
 
-@keyframes gradientSwipe {
-    0% {
-        background-position: 0% 50%;
-    }
-    25% {
-        background-position: 50% 100%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    75% {
-        background-position: 50% 0%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
 
 </style>
 
@@ -160,6 +149,7 @@ transform: scale(1.05);
 </body>
 
 </html>
+
 
 
 
