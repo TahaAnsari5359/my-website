@@ -9,8 +9,44 @@
 
 <style>
 
+.navbar{
+    width:100%;
+    padding:15px 0;
+
+    background:linear-gradient(90deg,#141e30,#243b55);
+    
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+
+    display:flex;
+    justify-content:center;
+    gap:35px;
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    font-size:18px;
+    font-weight:600;
+    text-decoration:none;
+    padding:8px 18px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    background:#0072ff;
+    transform:scale(1.08);
+}
 
 
+
+
+
+
+    
 body{
     margin:0;
     padding:0;
@@ -351,19 +387,19 @@ updateTime();
 
 
 
-
-<a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-<a href="about.html" id="header"> About </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-
-
-
-<a href="skills.html" id="header"> Skills </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-
-<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<div class="navbar">
+<a href="index.html" id="header">Home</a>
+<a href="about.html" id="header">About</a>
+<a href="skills.html" id="header">Skills</a>
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header">Projects</a>
 <a href="top_creations.html" id="header">My Top Creations</a>
-<a href="contacts.html" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<a href="contacts.html" id="header">Contact</a>
+</div>
 
 
+
+
+    
 <div id="clock"></div>
 
 <hr>
@@ -430,6 +466,7 @@ updateTime();
 
 </body>
 </html>
+
 
 
 
