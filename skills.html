@@ -7,68 +7,78 @@
 
 <style>
 
-
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #f6d365, #fda085);
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(135deg,#141e30,#243b55);
+min-height:100vh;
 }
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.navbar{
+display:flex;
+justify-content:center;
+gap:35px;
+padding:18px;
+background:linear-gradient(90deg,#000428,#004e92);
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+position:sticky;
+top:0;
 }
 
-.navbar a {
-  color: #F80626;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 1px;
-  transition: 0.3s ease;
+.navbar a{
+color:white;
+text-decoration:none;
+font-weight:600;
+letter-spacing:1px;
+padding:8px 18px;
+border-radius:6px;
+transition:0.3s;
 }
 
-.navbar a:hover {
-  color: #0072ff;
-  text-shadow: 0px 0px 8px rgba(0,114,255,0.6);
+.navbar a:hover{
+background:#00c6ff;
+color:black;
+transform:scale(1.08);
 }
 
-.main {
-  width: 85%;
-  max-width: 700px;
-  margin: 60px auto;
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
- transition: 0.3s ease;
+.main{
+width:85%;
+max-width:700px;
+margin:80px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,0.3);
+transition:0.3s;
 }
 
 .main:hover{
-background: #B8C8E8;
-transform: scale(1.1);
-transition: 0.3s ease;
+transform:scale(1.03);
 }
 
-
-
-h2 {
-  text-align: center;
-  margin-bottom: 40px;
-  color: #333;
+h2{
+text-align:center;
+margin-bottom:40px;
+font-size:32px;
+background:linear-gradient(90deg,#00ffff,#bb86fc,#00ff88,#ff9800);
+background-size:600%;
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:gradientMove 6s linear infinite;
 }
 
-
-.skill {
-  margin-bottom: 30px;
+@keyframes gradientMove{
+0%{background-position:0%;}
+100%{background-position:300%;}
 }
 
-.skill-name {
-  margin-bottom: 8px;
-  font-weight: 600;
+.skill{
+margin-bottom:30px;
+}
+
+.skill-name{
+margin-bottom:8px;
+font-weight:600;
 }
 
 .skill-name:hover{
@@ -76,176 +86,104 @@ font-weight:900;
 text-decoration:underline;
 }
 
-
-
-
-.progress {
-  width: 100%;
-  background: #eee;
-  height: 25px;
-  border-radius: 20px;
-  overflow: hidden;
+.progress{
+width:100%;
+background:#e0e0e0;
+height:26px;
+border-radius:20px;
+overflow:hidden;
 }
 
-.progress-bar {
-  height: 100%;
-  text-align: center;
-  line-height: 25px;
-  color: white;
-  font-weight: bold;
-  border-radius: 20px;
-  animation: load 2s ease forwards;
+.progress-bar{
+height:100%;
+text-align:center;
+line-height:26px;
+color:white;
+font-weight:bold;
+border-radius:20px;
+animation:load 2s ease forwards;
 }
 
-
-.python { width: 90%; background: #28A745; }
-.cpp { width: 50%; background: #DC3545; }
-.html { width: 70%; background:  #3776AB;}
-.css { width: 60%; background: #FD7E14; }
-
-
-@keyframes load {
-  from { width: 0; }
+.python{
+width:90%;
+background:linear-gradient(90deg,#28a745,#5dd879);
 }
 
-
-body > a#header {
-    color: #F80626;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 1.1px;
-    text-decoration: none;
-    padding: 8px 18px;
-    margin: 0 12px;  
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    display: inline-block;
+.cpp{
+width:50%;
+background:linear-gradient(90deg,#dc3545,#ff6b81);
 }
 
-
-
-body > a{
-    margin-top:20px;
+.html{
+width:70%;
+background:linear-gradient(90deg,#e44d26,#f16529);
 }
 
-body{
-    padding-top:20px;  
+.css{
+width:60%;
+background:linear-gradient(90deg,#264de4,#3796ff);
 }
 
-body > a#header:hover {
-    color: #fff;
-    background: #0072ff;
-    box-shadow: 0 6px 12px rgba(0,114,255,0.7);
-    transform: scale(1.1);
-    text-shadow: 0 0 6px rgba(255,255,255,0.8);
+@keyframes load{
+from{width:0;}
 }
-
-
-body > a#header:first-child {
-    margin-left: 50px; 
-}
-
-body > a#header:last-child {
-    margin-right: 50px; 
-}
-
-
-
-
-a#header{
-    color:#F80626;
-    text-decoration:none;
-    font-weight:bold;
-    letter-spacing:1px;
-    transition:0.3s ease;
-}
-
-a#header:hover{
-    color:#0072ff;
-    text-shadow:0px 0px 8px rgba(0,114,255,0.6);
-}
-
-
-#dividing {
-    height: 5px;
-    width: 80%;
-    margin: 40px auto;
-    background: linear-gradient(
-        to right,
-        transparent,
-        #4da6ff,
-        #ffffff,
-        #4da6ff,
-        transparent
-    );
-    border-radius: 50px;
-}
-
-
-
 
 hr{
-    border:none;
-    height:2px;
-    background:#4B3FBF;
-    opacity:0.8;
+border:none;
+height:2px;
+background:#4da6ff;
+opacity:0.6;
+margin-top:0;
 }
-
-
-
 
 </style>
 </head>
 
 <body>
 
-<a href="index.html" id="header">  home </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-<a href="about.html" id="header"> About</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-
-
-
-
-
-<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"> Projects </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
-
-<a href="contacts.html" id="header"> Contact </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank">Projects</a>
+<a href="contacts.html">Contact</a>
+</div>
 
 <hr>
 
-
 <div class="main">
-  <strong><b><u><h2>My Skills</h2></strong></b></u>
 
-  <div class="skill">
-    <div class="skill-name">Python</div>
-    <div class="progress">
-      <div class="progress-bar python">90%</div>
-    </div>
-  </div>
+<h2>My Skills</h2>
 
-  <div class="skill">
-    <div class="skill-name">C++</div>
-    <div class="progress">
-      <div class="progress-bar cpp">50%</div>
-    </div>
-  </div>
+<div class="skill">
+<div class="skill-name">Python</div>
+<div class="progress">
+<div class="progress-bar python">90%</div>
+</div>
+</div>
 
-  <div class="skill">
-    <div class="skill-name">HTML</div>
-    <div class="progress">
-      <div class="progress-bar html">70%</div>
-    </div>
-  </div>
+<div class="skill">
+<div class="skill-name">C++</div>
+<div class="progress">
+<div class="progress-bar cpp">50%</div>
+</div>
+</div>
 
-  <div class="skill">
-    <div class="skill-name">CSS</div>
-    <div class="progress">
-      <div class="progress-bar css">60%</div>
-    </div>
-  </div>
+<div class="skill">
+<div class="skill-name">HTML</div>
+<div class="progress">
+<div class="progress-bar html">70%</div>
+</div>
+</div>
+
+<div class="skill">
+<div class="skill-name">CSS</div>
+<div class="progress">
+<div class="progress-bar css">60%</div>
+</div>
+</div>
 
 </div>
 
 </body>
 </html>
-
