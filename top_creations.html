@@ -2,206 +2,160 @@
 <html>
 <head>
     <title>My All Time Fav Projects</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding-top: 20px;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
 
+        h1 {
+            font-family: Algerian, serif;
+            text-decoration: underline;
+            color: white;
+            margin-bottom: 40px;
+        }
 
+        a#header {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: 0.3s ease;
+            font-size: 17px;
+            padding: 8px 20px;
+            margin: 0 10px;
+            border-radius: 6px;
+            display: inline-block;
+        }
 
+        a#header:hover {
+            color: #00e5ff;
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.08);
+        }
 
+        body > a:first-child {
+            margin-left: 50px;
+        }
 
+        body > a:last-child {
+            margin-right: 50px;
+        }
 
-<style>
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
 
-body {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    padding-top: 20px;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
+        div img {
+            width: 350px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+        }
 
+        div img:hover {
+            transform: scale(1.06);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
 
-h1 {
-    font-family: Algerian, serif;
-    text-decoration: underline;
-    color: white;
-    margin-bottom: 40px;
-}
+        .head {
+            background: linear-gradient(90deg, #141e30, #243b55);
+            padding: 18px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
 
-a#header {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transition: 0.3s ease;
-    font-size: 17px;
-    padding: 8px 20px;
-    margin: 0 10px;
-    border-radius: 6px;
-    display: inline-block;
-}
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
 
-a#header:hover {
-    color: #00e5ff;
-    background: rgba(255,255,255,0.1);
-    transform: scale(1.08);
-}
+        .btn {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
+        }
 
-body > a:first-child {
-    margin-left: 50px;
-}
-
-body > a:last-child {
-    margin-right: 50px;
-}
-
-
-div {
-    display: flex;
-    flex-wrap: wrap;       
-    justify-content: center;
-    gap: 40px;            
-}
-
-
-div img {
-    width: 350px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display:block;
-}
-
-div img:hover {
-    transform: scale(1.06);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
-}
-
-.head{
-    background: linear-gradient(90deg,#141e30,#243b55);
-    padding:18px 0;
-    box-shadow:0 4px 12px rgba(0,0,0,0.4);
-}
-    
-a{
-    display: inline-block;
-    text-decoration: none;
-    
-    
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    transition: 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.btn {
-    background: linear-gradient(45deg,#00c6ff,#0072ff);
-    color: white;
-    padding: 12px 30px;
-    border-radius: 8px;
-    font-size: 16px;
-}
-    
-
-.btn:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-    filter: brightness(1.2);
-    color:black;
-}
-
-
-
-
-
-    
-</style>
-
-
-
-
-
-
-
+        .btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.2);
+            color: black;
+        }
+    </style>
 </head>
-
 <body>
+
     <div class="head">
-    <a href="index.html" id="header">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="about.html" id="header">About</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="skills.html" id="header">Skills</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header">Projects</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="contacts.html" id="header">Contact</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="index.html" id="header">Home</a>
+        <a href="about.html" id="header">About</a>
+        <a href="skills.html" id="header">Skills</a>
+        <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header">Projects</a>
+        <a href="contacts.html" id="header">Contact</a>
     </div>
+
     <center>
-        <strong><h1>My Top Project Showcase</h1></strong>
+        <h1>My Top Project Showcase</h1>
 
         <div>
             <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/Ai%20image%20generator" target="_blank" class="btn">
-            <img src="ai_img_gen.png" alt="Ai Image Generator Image" height="350" width="350">
-                <br>
-                 View Source Code 
+                <img src="ai_img_gen.png" alt="Ai Image Generator Image" height="350" width="350">
+                <br>View Source Code
             </a>
-            
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/python%20code%20runner" target="_blank" >
-            <img src="python_code_runner.png" alt="Python Code Runner" height="350" width="350">
-            </a>
-            
-            <br><br><br><br>
-            
 
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/email%20proj" target="_blank" >
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/python%20code%20runner" target="_blank">
+                <img src="python_code_runner.png" alt="Python Code Runner" height="350" width="350">
+            </a>
 
-            <img src="email.png" alt="Email" height="450" width="350">
-            </a>
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/GUI%20calculator" target="_blank" >
-            <img src="calculator.png" alt="Calculator" height="450" width="350">
-            </a>
             <br><br><br><br>
 
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/music_player" target="_blank" >
-            <img src="mp3_player.png" alt="MP3 Player" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/email%20proj" target="_blank">
+                <img src="email.png" alt="Email" height="450" width="350">
             </a>
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/tic-tac-toe" target="_blank" > 
-            <img src="tic-tac-toe.png" alt="Tic Tac Toe" height="450" width="350">
+
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/GUI%20calculator" target="_blank">
+                <img src="calculator.png" alt="Calculator" height="450" width="350">
             </a>
+
             <br><br><br><br>
 
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/virus_game" target="_blank" > 
-            <img src="virus.png" alt="Virus Game" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/music_player" target="_blank">
+                <img src="mp3_player.png" alt="MP3 Player" height="450" width="350">
             </a>
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/typing_speed_tester.py" target="_blank" >
-            <img src="typing_speed.png" alt="Typing Speed" height="450" width="350">
+
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/tic-tac-toe" target="_blank">
+                <img src="tic-tac-toe.png" alt="Tic Tac Toe" height="450" width="350">
+            </a>
+
+            <br><br><br><br>
+
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/virus_game" target="_blank">
+                <img src="virus.png" alt="Virus Game" height="450" width="350">
+            </a>
+
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/typing_speed_tester.py" target="_blank">
+                <img src="typing_speed.png" alt="Typing Speed" height="450" width="350">
             </a>
         </div>
-<br><br>
-<a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects" target="_blank_" class="btn">more projects</a>
+
+        <br><br>
+
+        <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects" target="_blank" class="btn">More Projects</a>
     </center>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
