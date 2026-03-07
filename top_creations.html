@@ -8,6 +8,7 @@
             padding-top: 20px;
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
         }
 
         h1 {
@@ -15,6 +16,12 @@
             text-decoration: underline;
             color: white;
             margin-bottom: 40px;
+        }
+
+        .head {
+            background: linear-gradient(90deg, #141e30, #243b55);
+            padding: 18px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
         }
 
         a#header {
@@ -36,85 +43,69 @@
             transform: scale(1.08);
         }
 
-        body > a:first-child {
-            margin-left: 50px;
-        }
-
-        body > a:last-child {
-            margin-right: 50px;
-        }
-
-        div {
+        .projects-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 40px;
         }
 
-        div img {
+        .project {
+            display: inline-block;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .project img {
             width: 350px;
             border-radius: 12px;
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: block;
         }
 
-        div img:hover {
+        .project img:hover {
             transform: scale(1.06);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
         }
 
-        .head {
-            background: linear-gradient(90deg, #141e30, #243b55);
-            padding: 18px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-
-        a {
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px 25px;
-            font-size: 16px;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn {
-            background: linear-gradient(45deg, #00c6ff, #0072ff);
+        .source {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             color: white;
             padding: 12px 30px;
             border-radius: 8px;
             font-size: 16px;
-           transition: 0.3s ease;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
+        }
+
+        .source:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            filter: brightness(1.2);
+            color: #00e5ff;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
         }
 
         .btn:hover {
             transform: scale(1.08);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
             filter: brightness(1.2);
-            color: black;
+            color: #00e5ff;
         }
-
-        .source{
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-size: 16px;
-           transition: 0.3s ease;
-        }
-
-        .source.hover{
-            transform: scale(1.08);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            filter: brightness(1.2);
-            color: black;
-        }
-            
-        
-        
     </style>
 </head>
 <body>
@@ -127,88 +118,68 @@
         <a href="contacts.html" id="header">Contact</a>
     </div>
 
-    <center>
-        <h1>My Top Project Showcase</h1>
+    <h1>My Top Project Showcase</h1>
 
-        <div>
-                
-                <img src="ai_img_gen.png" alt="Ai Image Generator Image" height="350" width="350">
-                <br>
-                <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/blob/main/Ai%20image%20generator" target="_blank">
-                <button class="source"> View Source Code </button>
-                
-            
-            </a>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/python%20code%20runner" target="_blank">
-                <img src="python_code_runner.png" alt="Python Code Runner" height="350" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <br><br><br><br>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/email%20proj" target="_blank">
-                <img src="email.png" alt="Email" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/GUI%20calculator" target="_blank">
-                <img src="calculator.png" alt="Calculator" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <br><br><br><br>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/music_player" target="_blank">
-                <img src="mp3_player.png" alt="MP3 Player" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/tic-tac-toe" target="_blank">
-                <img src="tic-tac-toe.png" alt="Tic Tac Toe" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <br><br><br><br>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/virus_game" target="_blank">
-                <img src="virus.png" alt="Virus Game" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
-            </a>
-
-            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/typing_speed_tester.py" target="_blank">
-                <img src="typing_speed.png" alt="Typing Speed" height="450" width="350">
-                <br>
-                <button class="source"> View Source Code </button>
+    <div class="projects-container">
+        <div class="project">
+            <img src="ai_img_gen.png" alt="Ai Image Generator Image" height="350" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/blob/main/Ai%20image%20generator" target="_blank">
+                <button class="source">View Source Code</button>
             </a>
         </div>
 
-        <br><br>
+        <div class="project">
+            <img src="python_code_runner.png" alt="Python Code Runner" height="350" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/python%20code%20runner" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
 
-        <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects" target="_blank" class="btn">More Projects</a>
-    </center>
+        <div class="project">
+            <img src="email.png" alt="Email" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/email%20proj" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+
+        <div class="project">
+            <img src="calculator.png" alt="Calculator" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/GUI%20calculator" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+
+        <div class="project">
+            <img src="mp3_player.png" alt="MP3 Player" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/music_player" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+        <div class="project">
+            <img src="tic-tac-toe.png" alt="Tic Tac Toe" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/tic-tac-toe" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+
+        
+        <div class="project">
+            <img src="virus.png" alt="Virus Game" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/virus_game" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+
+       
+        <div class="project">
+            <img src="typing_speed.png" alt="Typing Speed" height="450" width="350">
+            <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/typing_speed_tester.py" target="_blank">
+                <button class="source">View Source Code</button>
+            </a>
+        </div>
+    </div>
+
+    <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects" target="_blank" class="btn">More Projects</a>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
