@@ -3,116 +3,116 @@
 <head>
     <title>My All Time Fav Projects</title>
     <style>
-        body {
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            padding-top: 20px;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-        }
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    padding-top: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+}
 
-        h1 {
-            font-family: Algerian, serif;
-            text-decoration: underline;
-            color: white;
-            margin-bottom: 40px;
-        }
+h1 {
+    font-family: Algerian, serif;
+    text-decoration: underline;
+    color: white;
+    margin-bottom: 40px;
+}
 
-        .head {
-            background: linear-gradient(90deg, #141e30, #243b55);
-            padding: 18px 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
+.head {
+    background: linear-gradient(90deg, #141e30, #243b55);
+    padding: 18px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
 
-        a#header {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 1px;
-            transition: 0.3s ease;
-            font-size: 17px;
-            padding: 8px 20px;
-            margin: 0 10px;
-            border-radius: 6px;
-            display: inline-block;
-        }
+a#header {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+    font-size: 17px;
+    padding: 8px 20px;
+    margin: 0 10px;
+    border-radius: 6px;
+    display: inline-block;
+}
 
-        a#header:hover {
-            color: #00e5ff;
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(1.08);
-        }
+a#header:hover {
+    color: #00e5ff;
+    background: rgba(255, 255, 255, 0.1);
+    transform: scale(1.08);
+}
 
-        .projects-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-        }
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
 
-        .project {
-            display: block;
-            margin-top: 10px;
-            text-align: center;
-            margin: 20px;
-        }
+.project {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    margin: 20px;
+}
 
-        .project img {
-            width: 350px;
-            border-radius: 12px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+.project img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-        .project img:hover {
-            transform: scale(1.06);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-        }
+.project img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+}
 
-        .project a{
+.project a {
     display: block;
     margin-top: 10px;
     text-align: center;
 }
 
-        .source {
-            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-size: 16px;
-            border: none;
-            cursor: pointer;
-            margin-top: 10px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
-        }
+.source {
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
+}
 
-        .source:hover {
-            transform: scale(1.08);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            filter: brightness(1.2);
-            color: #00e5ff;
-        }
+.source:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+    color: #00e5ff;
+}
 
-        .btn {
-            background: linear-gradient(135deg, #ff512f, #dd2476);
-            color: white;
-            padding: 12px 30px;
-            border-radius: 8px;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            cursor: pointer;
-            margin-top: 30px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
-        }
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff512f, #dd2476);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
 
-        .btn:hover {
-            transform: scale(1.08);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-            filter: brightness(1.2);
-            color: #00e5ff;
-        }
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.2);
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -190,6 +190,7 @@
 
 </body>
 </html>
+
 
 
 
