@@ -12,6 +12,7 @@ margin:0;
 font-family:'Segoe UI',sans-serif;
 background:linear-gradient(135deg,#141e30,#243b55);
 min-height:100vh;
+  animation: bgGradient 25s ease infinite;
 }
 
 .navbar{
@@ -138,6 +139,15 @@ opacity:0.6;
 margin-top:0;
 }
 
+
+@keyframes bgGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+  
 </style>
 </head>
 
@@ -190,5 +200,6 @@ margin-top:0;
 
 </body>
 </html>
+
 
 
