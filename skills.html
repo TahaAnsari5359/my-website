@@ -12,7 +12,7 @@ margin:0;
 font-family:'Segoe UI',sans-serif;
 background:linear-gradient(135deg,#141e30,#243b55);
 min-height:100vh;
-  animation: bgGradient 25s ease infinite;
+
 }
 
 .navbar{
@@ -105,13 +105,24 @@ color:white;
 font-weight:bold;
 border-radius:20px;
 animation:load 2s ease forwards;
+  animation: fillSkill 2s ease forwards;
+  animation-delay: 0.5s;
 }
+  .python { --skill-width: 90%; }
+.cpp    { --skill-width: 50%; }
+.html   { --skill-width: 70%; }
+.css    { --skill-width: 60%; }
 
 .python{
 width:90%;
 background:linear-gradient(90deg,#28a745,#5dd879);
 }
 
+@keyframes fillSkill {
+  from { width: 0%; }
+  to { width: var(--skill-width); }
+}
+  
 .cpp{
 width:50%;
 background:linear-gradient(90deg,#dc3545,#ff6b81);
@@ -200,6 +211,7 @@ margin-top:0;
 
 </body>
 </html>
+
 
 
 
