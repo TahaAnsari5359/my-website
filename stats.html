@@ -12,6 +12,7 @@ color:white;
 text-align:center;
 margin:0;
 padding:40px;
+animation: scroll-left 10s linear infinite;
 }
 
 h1{
@@ -37,6 +38,19 @@ img{
 max-width:100%;
 border-radius:10px;
 }
+
+
+
+
+@keyframes scroll-left {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+
+
+
+  
 
 </style>
 </head>
@@ -114,6 +128,7 @@ border-radius:10px;
 </body>
 
 </html>
+
 
 
 
