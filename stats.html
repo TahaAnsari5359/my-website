@@ -12,7 +12,7 @@ color:white;
 text-align:center;
 margin:0;
 padding:40px;
-animation: scroll-left 5s;
+animation: fadeSlideUp 1s ease-out forwards;
 }
 
 h1{
@@ -42,11 +42,16 @@ border-radius:10px;
 
 
 
-@keyframes scroll-left {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 
 
 
@@ -128,6 +133,7 @@ border-radius:10px;
 </body>
 
 </html>
+
 
 
 
