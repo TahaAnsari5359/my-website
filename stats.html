@@ -11,7 +11,7 @@ background:linear-gradient(135deg,#141e30,#243b55);
 color:white;
 text-align:center;
 margin:0;
-padding:40px;
+padding:0px;
 animation: fadeSlideUp 1s ease-out forwards;
 }
 
@@ -19,6 +19,7 @@ h1{
 margin-bottom:40px;
 font-family:Algerian, serif;
 font-weight:700;
+text-decoration: underline;
 }
 
 .section{
@@ -28,6 +29,7 @@ max-width:700px;
 background:rgba(255,255,255,0.08);
 border-radius:15px;
 box-shadow:0 8px 20px rgba(0,0,0,0.4);
+transition:0.3s ease;
 }
 
 .section h2{
@@ -37,6 +39,11 @@ margin-bottom:20px;
 img{
 max-width:100%;
 border-radius:10px;
+}
+
+
+.section:hover{
+transform: scale(1.05)
 }
 
 
@@ -53,7 +60,34 @@ border-radius:10px;
   }
 }
 
+.navbar{
+width:100%;
+padding:15px 0;
+background:linear-gradient(90deg,#141e30,#243b55);
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+display:flex;
+justify-content:center;
+gap:35px;
+position:sticky;
+top:0;
+z-index:1000;
+}
 
+.navbar a{
+font-size:18px;
+font-weight:600;
+text-decoration:none;
+padding:8px 18px;
+border-radius:6px;
+transition:0.3s;
+color:white;
+}
+
+.navbar a:hover{
+background:#0072ff;
+transform:scale(1.08);
+color:black;
+}
 
   
 
@@ -61,6 +95,26 @@ border-radius:10px;
 </head>
 
 <body>
+
+
+<div class="navbar">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank">Projects</a>
+<a href="top_creations.html">My Top Creations</a>
+
+  
+<a href="contacts.html">Contact</a>
+</div>
+
+
+
+
+
+
+
+
 
 <h1>Developer Stats</h1>
 
@@ -70,19 +124,17 @@ border-radius:10px;
 <div class="section">
 <h2>1. Profile Views Counter</h2>
 
-<img src="https://komarev.com/ghpvc/?username=TahaAnsari5359&color=blue">
+<img src="https://komarev.com/ghpvc/?username=TahaAnsari5359&label=Profile%20Views&color=0e75b6&style=flat">
 
 </div>
 
 
 <div class="section">
-<h2>2. GitHub Trophy</h2>
+<h2>2. Activity Graph</h2>
 
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=TahaAnsari5359&theme=tokyo-night">
 
-       <img src="https://github-profile-trophy.vercel.app/?username=TahaAnsari5359&theme=onedark">
-        
 </div>
-
 
 <div class="section">
 <h2>3. GitHub Streak</h2>
@@ -128,7 +180,6 @@ border-radius:10px;
     <img src="https://ghchart.rshah.org/TahaAnsari5359" alt="GitHub Contribution Graph">
   </a>
 </div>
-
 
 
 </body>
