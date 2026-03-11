@@ -243,15 +243,6 @@ gap:10px;
   
 </style>
 
-<script>
-function updateTime(){
-const now=new Date();
-const time=now.toLocaleTimeString();
-document.getElementById("clock").innerText=time;
-}
-setInterval(updateTime,1000);
-updateTime();
-</script>
 
 </head>
 
@@ -339,9 +330,21 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 
 
 
+
+<script>
+function updateTime(){
+const now = new Date();
+const time = now.toLocaleTimeString();
+document.getElementById("clock").innerText = time;
+}
+
+setInterval(updateTime,1000);
+updateTime();
+</script>
   
 </body>
 </html>
+
 
 
 
