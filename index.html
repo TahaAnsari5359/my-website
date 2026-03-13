@@ -1,13 +1,10 @@
 <!doctype html>
 <html>
 <head>
- <link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
 <meta name="google-site-verification" content="Sjct7BpH6-h_a01tJCQ0WXV_9nr_f-7y0XMmaAo8aqA" />
-
 <meta name="description" content="Portfolio of Taha, a web developer specializing in JavaScript and modern web applications. View my projects, skills, and get in touch.">
 <title>Taha's Portfolio | Taha's Website & Web Developer Page</title>
-
-
 
 <script type="application/ld+json">
 {
@@ -32,8 +29,6 @@ background-repeat:no-repeat;
 padding-top:20px;
 }
 
-/* DARK OVERLAY FOR BACKGROUND */
-
 body::before{
 content:"";
 position:fixed;
@@ -44,8 +39,6 @@ height:100%;
 background:rgba(0,0,0,0.55);
 z-index:-1;
 }
-
-/* NAVBAR */
 
 .navbar{
 width:100%;
@@ -77,8 +70,6 @@ transform:scale(1.08);
 color:black;
 }
 
-/* TITLE */
-
 h1{
 font-size:40px;
 font-family:Algerian, serif;
@@ -98,15 +89,11 @@ text-shadow:0 0 20px rgba(0,0,0,0.8);
 100%{background-position:300%;}
 }
 
-/* PARAGRAPH */
-
 p{
 font-size:19px;
 line-height:1.8;
 color:#f0f0f0;
 }
-
-/* MAIN CONTENT CARD */
 
 #content{
 background:rgba(255,255,255,0.95);
@@ -118,21 +105,21 @@ max-width:800px;
 margin:30px auto;
 }
 
+#content p{
+color:#222;
+}
+
 #content:hover{
 transform:translateY(-5px) scale(1.01);
 background:#f7f7f7;
 box-shadow:0 18px 40px rgba(0,0,0,0.8);
 }
 
-/* LINES */
-
 .line:hover{
 color:#0072ff;
 font-weight:700;
-transform: scale(1.03);
+transform:scale(1.03);
 }
-
-/* DIVIDER */
 
 #dividing{
 height:3px;
@@ -141,8 +128,6 @@ margin:40px auto;
 background:linear-gradient(to right,transparent,#4da6ff,#ffffff,#4da6ff,transparent);
 border-radius:50px;
 }
-
-/* BUTTONS */
 
 #github-button,
 #linkedin-button,
@@ -179,8 +164,6 @@ transform:translateY(-3px) scale(1.05);
 box-shadow:0 10px 25px rgba(0,0,0,0.7);
 }
 
-/* CLOCK */
-
 .clock{
 font-size:30px;
 color:#fff;
@@ -196,8 +179,6 @@ margin:auto;
 width:max-content;
 }
 
-/* FOOTER */
-
 .footer-section{
 text-align:center;
 margin-top:40px;
@@ -210,13 +191,7 @@ width:100%;
 letter-spacing:1px;
 }
 
-
- 
 </style>
-    
-
-
-
 </head>
 
 <body>
@@ -228,7 +203,6 @@ letter-spacing:1px;
 <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank">Projects</a>
 <a href="top_creations.html">My Top Creations</a>
 <a href="stats.html">Developer Stats</a>
-  
 <a href="contacts.html">Contact</a>
 </div>
 
@@ -293,16 +267,9 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 <a href="tahacvanther.pdf" target="_blank" id="cv-button">Resume</a>
 </div>
 
-
-
-
 <div class="footer-section">
-
 <p>© 2026 Designed and Developed by Taha</p>
 </div>
-
-
-
 
 <script>
 function updateTime(){
@@ -310,54 +277,9 @@ const now = new Date();
 const time = now.toLocaleTimeString();
 document.getElementById("clock").innerText = time;
 }
-
 setInterval(updateTime,1000);
 updateTime();
 </script>
-  
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
