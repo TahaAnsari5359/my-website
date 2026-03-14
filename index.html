@@ -217,23 +217,43 @@ margin:0;
 
 .social{
 margin-left:60px;
-
 }
 
 .social img{
 transition:0.3s ease;
 margin-right:15px;
-
 }
 
 .social img:hover{
 transform:scale(1.5);
 }
 
-.logos{
-  filter:invert(1);
 
- }
+
+
+.corner-name{
+position:fixed;
+bottom:15px;
+right:20px;
+font-size:16px;
+font-weight:700;
+color:#ffffff;
+background:linear-gradient(90deg,#141e30,#243b55);
+padding:8px 14px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.corner-name:hover{
+transform:scale(1.08);
+background:#0072ff;
+color:black;
+}
+
+
+
 
 
 </style>
@@ -310,7 +330,7 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 
 <div class="social">
 <a href="https://www.linkedin.com/in/taha-ansari-72972a383/" target="_blank" >
-<img src="linkedin.png" height="42" width="40">
+<img src="linkedin.png" height="42" width="40" class="logos">
 </a>
 
 
@@ -320,7 +340,9 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 </div>
 
 
-
+<div class="corner-name">
+Taha Portfolio
+</div>
 
 <div class="footer-section">
 <p>© 2026 Designed and Developed by Taha</p>
