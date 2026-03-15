@@ -24,6 +24,41 @@ html{
  
 
 
+
+
+h2{
+font-size:34px;
+color:#ffffff;
+margin-top:20px;
+margin-bottom:15px;
+font-weight:700;
+letter-spacing:1px;
+text-align:center;
+position:relative;
+display:inline-block;
+padding-bottom:6px;
+}
+
+h2::after{
+content:"";
+width:60%;
+height:3px;
+background:#4da6ff;
+position:absolute;
+left:20%;
+bottom:0;
+border-radius:10px;
+}
+
+h2:hover{
+color:#4da6ff;
+transition:0.3s;
+}
+
+
+
+
+
  
 body{
 margin:0;
@@ -288,11 +323,14 @@ color:black;
 
 <h1>Taha Ansari | FUTURE SOFTWARE DEVELOPER</h1>
 
-<hr id="dividing">
 
+
+
+<hr id="dividing">
+<h2>Hi, I'm Taha Ansari</h2>
 <div id="content">
 
-<p class="line"><strong>Hi, I’m Taha Ansari.</strong></p>
+
 
 <p class="line">
 I am a student who is passionate about Computer Science and coding.
@@ -369,6 +407,5 @@ updateTime();
 
 </body>
 </html>
-
 
 
