@@ -83,23 +83,37 @@ a#header:hover {
 }
 
 .source {
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background: linear-gradient(135deg, #1f1c2c, #302b63);
     color: white;
-    padding: 12px 30px;
-    border-radius: 8px;
+    padding: 12px 28px;
+    border-radius: 10px;
     font-size: 16px;
-    border: none;
+    border: 1px solid rgba(255,255,255,0.2);
     cursor: pointer;
     margin-top: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
 }
 
 .source:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    filter: brightness(1.2);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 
+        0 0 10px rgba(0, 229, 255, 0.6),
+        0 0 20px rgba(0, 229, 255, 0.4);
     color: #00e5ff;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .btn {
     display: inline-block;
@@ -145,36 +159,6 @@ animation: glow 2s infinite;
 
 
 
-@keyframes glow {
-    0%{
-        box-shadow: 0 0 5px #00e5ff;
-    }
-    50%{
-        box-shadow: 0 0 20px #00e5ff;
-    }
-    100%{
-        box-shadow: 0 0 5px #00e5ff;
-    }
-}
-
-.source{
-animation: glow2 2s infinite;
-}
-
-
-
-@keyframes glow2 {
-    0%{
-        box-shadow: 0 0 5px #8e2de2, 0 0 10px #ff00c8;
-    }
-    50%{
-        box-shadow: 0 0 25px #8e2de2, 0 0 50px #ff00c8;
-    }
-    100%{
-        box-shadow: 0 0 5px #8e2de2, 0 0 10px #ff00c8;
-    }
-}
-
 
 @keyframes fadeUp {
   from {
@@ -193,6 +177,50 @@ margin-right:8px;
         
         
     </style>
+
+<script>
+
+function desc1(){
+alert("A simple AI image generator that creates images from text prompts. Users enter a description, and the AI generates a unique image based on the given input.")
+}
+
+function desc2(){
+alert("A Python code runner built with Tkinter that provides a simple GUI to write, run, and test Python programs easily.")
+}
+
+function desc3(){
+alert("A Python Tkinter email application that lets users send emails easily through a graphical interface by entering the recipient, subject, and message.")
+}
+
+function desc4(){
+alert("A scientific calculator developed using Python Tkinter that supports both basic arithmetic and advanced functions like sin, cos, square root, cube, and other mathematical operations.")
+}
+
+function desc5(){
+alert("A simple MP3 music player built with Python Tkinter that allows users to play, pause, and manage audio files through a graphical interface.")
+}
+
+function desc6(){
+alert("A classic Tic Tac Toe game built in Python where two players can play interactively with a simple graphical interface.")
+}
+
+
+function desc7(){
+alert("A Python-based virus tapping game where players click on viruses appearing on the screen to score points.")
+}
+
+
+
+function desc8(){
+alert("A Python-based typing speed tester that calculates a user's typing speed and accuracy in real time.")
+}
+
+
+
+
+</script>
+
+
 </head>
 <body>
 
@@ -212,41 +240,49 @@ margin-right:8px;
     <div class="project">
         <img src="ai_img_gen.png" alt="Ai Image Generator Image" height="350" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/blob/main/Ai%20image%20generator" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc1()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="python_code_runner.png" alt="Python Code Runner" height="350" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/python%20code%20runner" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc2()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="email.png" alt="Email" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/email%20proj" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc3()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="calculator.png" alt="Calculator" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/GUI%20calculator" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc4()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="mp3_player.png" alt="MP3 Player" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/music_player" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc5()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="tic-tac-toe.png" alt="Tic Tac Toe" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/tic-tac-toe" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc6()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="virus.png" alt="Virus Game" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/virus_game" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc7()" class="source">Description</a>
     </div>
 
     <div class="project">
         <img src="typing_speed.png" alt="Typing Speed" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/Tahaaaaaa-Python-Projects/tree/main/typing_speed_tester.py" target="_blank" class="source">View Source Code</a>
+	<a href="#" onclick="desc8()" class="source">Description</a>
     </div>
 
 
