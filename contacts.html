@@ -14,46 +14,35 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* horizontal center */
+  align-items: center;
 }
 
-#dividing {
-  height: 3px;
-  width: 80%;
-  margin: 40px auto;
-  background: linear-gradient(to right, transparent, #4da6ff, #ffffff, #4da6ff, transparent);
-  border-radius: 50px;
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
-hr {
-  border: none;
-  height: 2px;
-  background: red;
-  opacity: 0.4;
-}
-
-a#header {
+.navbar a {
   color: #F80626;
   text-decoration: none;
   font-weight: bold;
-  letter-spacing: 1px;
-  transition: 0.3s ease;
-  display: inline-block;
-  margin: 10px 6px;
   padding: 8px 18px;
   border-radius: 6px;
+  transition: 0.3s;
 }
 
-a#header:hover {
+.navbar a:hover {
   color: #fff;
   background: #0072ff;
-  box-shadow: 0 6px 12px rgba(0,114,255,0.7);
   transform: scale(1.1);
-  text-shadow: 0 0 6px rgba(255,255,255,0.8);
+  box-shadow: 0 6px 12px rgba(0,114,255,0.7);
 }
 
 h1 {
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 32px;
   font-family: Algerian, serif;
   text-decoration: underline;
@@ -69,7 +58,7 @@ form {
   border: 1px solid rgba(255,255,255,0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
   animation: fadeSlideDown 1.2s ease forwards;
-  margin: 20px 0; /* vertical spacing */
+  margin: 20px 0;
 }
 
 form:hover {
@@ -125,14 +114,8 @@ button:hover {
 }
 
 @keyframes fadeSlideDown {
-  0% {
-    opacity: 0;
-    transform: translateY(-40px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(-40px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .socialmedia {
@@ -201,10 +184,14 @@ button:hover {
     margin-right: 8px;
   }
 
-  a#header {
-    display: block;
-    margin: 8px auto;
+  .navbar {
+    flex-direction: column; /* mobile: stacked */
+    align-items: center;
+  }
+
+  .navbar a {
     width: 90%;
+    margin: 5px 0;
   }
 
   #topBtn {
@@ -219,14 +206,15 @@ button:hover {
 
 <body>
 
-<a href="index.html" id="header"><i class="fa-solid fa-house"></i>Home</a>
-<a href="about.html" id="header"><i class="fa-solid fa-user"></i>About</a>
-<a href="skills.html" id="header"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a>
-<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank" id="header"><i class="fa-solid fa-laptop-code"></i>Projects</a>
-<a href="top_creations.html" id="header"><i class="fa-solid fa-star"></i>My Top Creations</a>
-<a href="stats.html" id="header"><i class="fa-solid fa-chart-line"></i>Developer Stats</a>
+<div class="navbar">
+<a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+<a href="about.html"><i class="fa-solid fa-user"></i>About</a>
+<a href="skills.html"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a>
+<a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank"><i class="fa-solid fa-laptop-code"></i>Projects</a>
+<a href="top_creations.html"><i class="fa-solid fa-star"></i>My Top Creations</a>
+<a href="stats.html"><i class="fa-solid fa-chart-line"></i>Developer Stats</a>
+</div>
 
-<hr>
 <h1>Contact Me</h1>
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
 
