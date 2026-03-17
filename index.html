@@ -23,21 +23,6 @@
  "url": "https://taha-portfolio.pages.dev"
 }
 
-window.onload = function() {
-    const hour = new Date().getHours();
-    let greeting;
-
-    if (hour < 12) {
-        greeting = "Good Morning ☀️";
-    } else if (hour < 18) {
-        greeting = "Good Afternoon 🌤️";
-    } else {
-        greeting = "Good Evening 🌙";
-    }
-
-    document.getElementById("welcomeMsg").innerText =
-        greeting + ", Welcome to Taha's Portfolio 🚀";
-};
 
 
  
@@ -357,7 +342,7 @@ margin-right:8px;
 
  
 <div id="clock" class="clock"></div>
-<div id="welcomeMsg" style="text-align:center; color:white; font-size:22px; margin-top:10px;"></div>
+
 <hr>
 
 <center>
