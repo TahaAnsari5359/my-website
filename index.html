@@ -319,7 +319,27 @@ margin-right:8px;
 }
 
 
+#topBtn{
+position:fixed;
+bottom:30px;
+right:30px;
+padding:12px 16px;
+font-size:18px;
+border:none;
+border-radius:50%;
+background:#0072ff;
+color:white;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+display:none;
+transition:0.3s;
+z-index:1000;
+}
 
+#topBtn:hover{
+background:#00c6ff;
+transform:scale(1.1);
+}
 
  
 </style>
@@ -413,7 +433,7 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 <img src="github.png" height="42" width="40" class="logos">
 </a>
 </div>
-
+<button id="topBtn" onclick="scrollToTop()">⬆</button>
 
 <div class="corner-name">
 Taha Portfolio
@@ -432,6 +452,17 @@ document.getElementById("clock").innerText = time;
 }
 setInterval(updateTime,1000);
 updateTime();
+
+
+
+
+function scrolltotop(){
+ window.scrollTo((top:0,behavior:"smooth"));
+}
+
+
+
+ 
 </script>
 
 </body>
