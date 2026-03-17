@@ -12,6 +12,9 @@ body {
   background: linear-gradient(135deg, #000000, #001f3f, #0072ff);
   color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontal center */
 }
 
 #dividing {
@@ -66,6 +69,7 @@ form {
   border: 1px solid rgba(255,255,255,0.1);
   transition: transform 0.4s ease, box-shadow 0.4s ease, border 0.4s ease;
   animation: fadeSlideDown 1.2s ease forwards;
+  margin: 20px 0; /* vertical spacing */
 }
 
 form:hover {
@@ -168,7 +172,6 @@ button:hover {
   transform: scale(1.1);
 }
 
-/* Mobile Responsive */
 @media screen and (max-width: 768px) {
   body {
     padding: 20px;
