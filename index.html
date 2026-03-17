@@ -5,12 +5,9 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-
 <meta name="google-site-verification" content="Sjct7BpH6-h_a01tJCQ0WXV_9nr_f-7y0XMmaAo8aqA" />
 <meta name="description" content="Portfolio of Taha, a web developer specializing in JavaScript and modern web applications. View my projects, skills, and get in touch.">
-
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Taha's Portfolio | Taha's Website & Web Developer Page</title>
 
@@ -22,24 +19,12 @@
  "alternateName": "Taha's Website",
  "url": "https://taha-portfolio.pages.dev"
 }
-
-
 </script>
- 
 
-
-
-
- 
 <style>
-
 html{
  scroll-behavior:smooth;
 }
- 
-
-
-
 
 h2{
 font-size:34px;
@@ -70,11 +55,6 @@ color:#4da6ff;
 transition:0.3s;
 }
 
-
-
-
-
- 
 body{
 margin:0;
 padding:0;
@@ -87,7 +67,6 @@ padding-top:20px;
 animation:typing 2s ease-in;
 }
 
-
 body::before{
 content:"";
 position:fixed;
@@ -99,7 +78,6 @@ background:rgba(0,0,0,0.55);
 z-index:-1;
 }
 
- 
 @keyframes typing{
 from{width:0;}
 to{width:100%;}
@@ -116,7 +94,7 @@ gap:35px;
 position:sticky;
 top:0;
 z-index:1000;
-
+flex-wrap: wrap;
 }
 
 .navbar a{
@@ -173,10 +151,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.15);
 transition: all 0.4s ease;
 max-width:800px;
 margin:30px auto;
-
 }
 
- 
 #content:hover{
 transform:scale(1.02);
 box-shadow:0 0 25px #4da6ff,0 0 60px rgba(77,166,255,0.4);
@@ -206,26 +182,22 @@ background:white;
 opacity:0.4;
 }
 
-
-
 .clock{
 font-size:30px;
-    color:#fff;
-    padding:30px 60px;
-    border-radius:15px;
-    background:rgba(255,255,255,0.1);
-
-    box-shadow:0 8px 32px rgba(0,0,0,0.3);
-    letter-spacing:4px;
-    text-align:center;
-    font-family: 'Digital-7';
+color:#fff;
+padding:30px 60px;
+border-radius:15px;
+background:rgba(255,255,255,0.1);
+box-shadow:0 8px 32px rgba(0,0,0,0.3);
+letter-spacing:4px;
+text-align:center;
+font-family: 'Digital-7';
 }
 
 @font-face {
   font-family: 'Digital-7';
   src: url('digital-7.ttf');
 }
-
 
 .visitor-container{
 display:inline-block;
@@ -270,7 +242,6 @@ letter-spacing:1px;
 color:#ffffff;
 margin:0;
 }
-  
 
 .social{
 margin-left:60px;
@@ -288,7 +259,6 @@ transform:scale(1.5);
 .logos{
  filter: invert(1);
 }
-
 
 .corner-name{
 position:fixed;
@@ -311,13 +281,9 @@ background:#0072ff;
 color:black;
 }
 
-
-
-
 i{
 margin-right:8px;
 }
-
 
 #topBtn{
 position:fixed;
@@ -341,7 +307,56 @@ background:#00c6ff;
 transform:scale(1.1);
 }
 
- 
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        padding: 10px 12px;
+        font-size: 16px;
+        width: 90%;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #content {
+        padding: 20px;
+        margin: 20px 10px;
+        max-width: 95%;
+    }
+
+    .clock {
+        font-size: 22px;
+        padding: 20px 30px;
+    }
+
+    .social img {
+        height: 36px;
+        width: 36px;
+        margin-right: 10px;
+    }
+
+    .corner-name {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    #topBtn {
+        padding: 10px 14px;
+        font-size: 16px;
+    }
+}
 </style>
 </head>
 
@@ -354,16 +369,10 @@ transform:scale(1.1);
 <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank"><i class="fa-solid fa-laptop-code"></i>Projects</a>
 <a href="top_creations.html"><i class="fa-solid fa-star"></i>My Top Creations</a>
 <a href="stats.html"><i class="fa-solid fa-chart-line"></i>Developer Stats</a>
-<a href="tahacvanther.pdf" target="_blank"><i class="fa-solid fa-file"></i>  Resume </a>
-<a href="contacts.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+<a href="tahacvanther.pdf" target="_blank"><i class="fa-solid fa-file"></i>Resume</a>
+<a href="contacts.html"><i class="fa-solid fa-envelope"></i>Contact</a>
 </div>
 
-
-
-
-
-
- 
 <div id="clock" class="clock"></div>
 
 <hr>
@@ -374,12 +383,9 @@ transform:scale(1.1);
 
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
 
-
 <hr id="dividing">
 <h2>Hi, I'm Taha Ansari</h2>
 <div id="content">
-
-
 
 <p class="line">
 I am a student who is passionate about Computer Science and coding.
@@ -417,23 +423,19 @@ If you want to rate my applications, you can visit my GitHub profile on the Home
 </p>
 
 </div>
-
 </center>
 
 <br>
-
 
 <div class="social">
 <a href="https://www.linkedin.com/in/taha-ansari-72972a383/" target="_blank" >
 <img src="linkedin.png" height="42" width="40">
 </a>
 
-
 <a href="https://github.com/TahaAnsari5359" target="_blank" >
 <img src="github.png" height="42" width="40" class="logos">
 </a>
 </div>
-
 
 <div class="corner-name">
 Taha Portfolio
@@ -452,16 +454,7 @@ document.getElementById("clock").innerText = time;
 }
 setInterval(updateTime,1000);
 updateTime();
-
-
-
-
-
-
- 
 </script>
 
 </body>
 </html>
-
-
