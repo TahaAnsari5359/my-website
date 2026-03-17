@@ -22,6 +22,17 @@
  "alternateName": "Taha's Website",
  "url": "https://taha-portfolio.pages.dev"
 }
+
+window.onload = function(){
+  let box = document.getElementById("welcomeBox");
+
+  setTimeout(()=>{
+    box.style.display="none";
+  },4000);
+}
+
+
+ 
 </script>
 
 <style>
@@ -310,6 +321,29 @@ color:black;
 i{
 margin-right:8px;
 }
+
+
+#welcomeBox{
+position:fixed;
+top:20px;
+right:20px;
+background:black;
+color:white;
+padding:15px 25px;
+border-radius:10px;
+font-size:18px;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
+opacity:0;
+animation:showMsg 1s forwards;
+}
+
+@keyframes showMsg{
+to{
+opacity:1;
+}
+}
+
+ 
 </style>
 </head>
 
@@ -326,6 +360,16 @@ margin-right:8px;
 <a href="contacts.html"><i class="fa-solid fa-envelope"></i> Contact</a>
 </div>
 
+
+<div id="welcomeBox">
+  <h2>Welcome to Taha's Portfolio 🚀</h2>
+</div>
+
+
+
+
+
+ 
 <div id="clock" class="clock"></div>
 
 <hr>
