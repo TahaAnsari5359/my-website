@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Calculator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            min-height: 100vh;
+        }
+
+        h1 {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: 32px;
+            background: linear-gradient(90deg, #00ffff, #bb86fc, #00ff88, #ff9800);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradientMove 5s linear infinite;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0%; }
+            100% { background-position: 300%; }
+        }
+
+        input[type="tel"], input[type="text"] {
+            padding: 12px 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: none;
+            width: 250px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #00c6ff;
+            color: #000;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0072ff;
+            transform: scale(1.05);
+            color: #fff;
+        }
+
+        #result {
+            margin-top: 30px;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .calculator-container {
+            background: rgba(0,0,0,0.25);
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+    </style>
+</head>
+<body>
+
+<h1>Calculator</h1>
+
+<div class="calculator-container">
+    <label>Enter 1st Number:</label>&nbsp;
+    <input type="tel" placeholder="Enter 1st Number" id="num1" required>
+    <br>
+
+    <label>Enter 2nd Number:</label>&nbsp;
+    <input type="tel" placeholder="Enter 2nd Number" id="num2">
+    <br>
+
+    <label>Enter sign (+, -, *, /):</label>&nbsp;
+    <input type="text" placeholder="Enter sign eg- +,-,*,/" id="signn" required>
+    <br>
+
+    <button onclick="solvee()">Solve</button>&nbsp;&nbsp;
+    <button onclick="clearr()">clear</button>
+
+    <p id="result"></p>
+</div>
+
+<script>
+function solvee(){
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
+    let signnn = document.getElementById("signn").value;
+
+    let sums = n1+n2;
+    let subs = n1-n2;
+    let divi = n1/n2;
+    let mul = n1*n2;
+
+    if (signnn == "+"){
+        document.getElementById("result").innerHTML=`Sum of ${n1} and ${n2} is ${sums}`;
+    } else if(signnn=="-"){
+        document.getElementById("result").innerHTML=`Difference of ${n1} and ${n2} is ${subs}`;
+    } else if(signnn=="*"){
+        document.getElementById("result").innerHTML=`Product of ${n1} and ${n2} is ${mul}`;
+    } else if(signnn=="/"){
+        if(n2 !== 0){
+            document.getElementById("result").innerHTML=`Division of ${n1} by ${n2} is ${divi}`;
+        } else {
+            document.getElementById("result").innerHTML="Error: Division by zero!";
+        }
+    } else{
+        document.getElementById("result").innerHTML=`Invalid sign! Use +, -, *, /`;
+    }
+
+}
+
+function clearr(){
+document.getElementById("num1").value="";
+document.getElementById("num2").value="";
+document.getElementById("result").innerHTML="";
+}
+
+
+
+
+</script>
+
+</body>
+</html>
