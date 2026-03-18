@@ -84,7 +84,7 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 padding-top:20px;
-animation: swipeSmooth 1.5s ease-in-out infinite;
+animation: bodySwipe 12s ease-in-out infinite;
 }
 
 
@@ -99,15 +99,22 @@ background:rgba(0,0,0,0.55);
 z-index:-1;
 }
 
- 
-@keyframes swipeRight {
-  from {
-    transform: translateX(0);
+
+ @keyframes bodySwipe {
+  0% {
+    background-position: 0% 50%;
   }
-  to {
-    transform: translateX(200px);
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
+
+
+
+ 
 .navbar{
 width:100%;
 padding:15px 0;
