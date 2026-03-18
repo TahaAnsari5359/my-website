@@ -1,72 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Taha's Portfolio</title>
 <link rel="icon" type="image/png" href="favicon.png">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<meta name="google-site-verification" content="Sjct7BpH6-h_a01tJCQ0WXV_9nr_f-7y0XMmaAo8aqA" />
 <meta name="description" content="Portfolio of Taha, a web developer specializing in JavaScript and modern web applications. View my projects, skills, and get in touch.">
 
+
+
+
+<title>Taha's Portfolio | Taha's Website & Web Developer Page</title>
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "Taha's Portfolio",
+ "alternateName": "Taha's Website",
+ "url": "https://taha-portfolio.pages.dev"
+}
+
+
+</script>
+ 
+
+
+
+
+ 
 <style>
-body{
-margin:0;
-font-family:'Segoe UI', sans-serif;
-background:linear-gradient(135deg,#141e30,#243b55);
-color:white;
-scroll-behavior:smooth;
+
+html{
+ scroll-behavior:smooth;
+}
+ 
+
+
+
+
+h2{
+font-size:34px;
+color:#ffffff;
+margin-top:20px;
+margin-bottom:15px;
+font-weight:700;
+letter-spacing:1px;
+text-align:center;
+position:relative;
+display:inline-block;
+padding-bottom:6px;
 }
 
-.navbar{
-display:flex;
-justify-content:center;
-gap:25px;
-padding:15px;
-background:rgba(0,0,0,0.4);
-position:sticky;
-top:0;
-z-index:1000;
+h2::after{
+content:"";
+width:60%;
+height:3px;
+background:#4da6ff;
+position:absolute;
+left:20%;
+bottom:0;
+border-radius:10px;
 }
 
-.navbar a{
-color:white;
-text-decoration:none;
-padding:8px 15px;
-border-radius:6px;
+h2:hover{
+color:#4da6ff;
 transition:0.3s;
 }
 
+
+
+
+
+ 
+body{
+margin:0;
+padding:0;
+font-family:'Segoe UI', sans-serif;
+background-image:url("bg_image.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+padding-top:20px;
+animation:typing 2s ease-in;
+}
+
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+z-index:-1;
+}
+
+ 
+@keyframes typing{
+from{width:0;}
+to{width:100%;}
+}
+
+.navbar{
+width:100%;
+padding:15px 0;
+background:linear-gradient(90deg,#141e30,#243b55);
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+display:flex;
+justify-content:center;
+gap:35px;
+position:sticky;
+top:0;
+z-index:1000;
+
+}
+
+.navbar a{
+font-size:15px;
+font-weight:600;
+text-decoration:none;
+padding:8px 18px;
+border-radius:6px;
+transition:0.3s;
+color:white;
+}
+
 .navbar a:hover{
-background:#00c6ff;
+background:#0072ff;
+transform:scale(1.08);
 color:black;
-transform:scale(1.05);
-}
-
-.container{
-max-width:800px;
-margin:40px auto;
-text-align:center;
-padding:20px;
-}
-
-.top-section{
-margin-bottom:20px;
-}
-
-.clock{
-font-size:28px;
-font-weight:bold;
-}
-
-.date{
-font-size:16px;
-opacity:0.8;
-margin-top:5px;
 }
 
 h1{
-font-size:40px;
-margin-bottom:5px;
+font-size:38px;
+font-family:Algerian, serif;
+font-weight:700;
+margin-top:20px;
 background:linear-gradient(90deg,#00ffff,#bb86fc,#00ff88,#ff9800);
 background-size:600%;
 -webkit-background-clip:text;
@@ -76,68 +149,109 @@ letter-spacing:2px;
 text-shadow:0 0 10px rgba(0,0,0,0.3);
 }
 
-.subtitle{
-font-weight:400;
-opacity:0.8;
-margin-bottom:20px;
-}
-
 @keyframes gradientMove{
 0%{background-position:0%;}
 100%{background-position:300%;}
 }
 
-h2{
-margin-top:30px;
-border-bottom:2px solid #00c6ff;
-display:inline-block;
-padding-bottom:5px;
+h1:hover{
+text-decoration:underline;
 }
 
-.content{
+p{
+font-size:20px;
+line-height:1.8;
+color:#2c2c2c;
+transition: 0.3s ease;
+}
+
+#content{
 background:white;
-color:black;
-padding:25px;
-border-radius:12px;
-margin-top:20px;
-line-height:1.6;
-box-shadow:0 10px 20px rgba(0,0,0,0.3);
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition: all 0.4s ease;
+max-width:800px;
+margin:30px auto;
+
 }
 
-.content p{
-margin:10px 0;
+ 
+#content:hover{
+transform:scale(1.02);
+box-shadow:0 0 25px #4da6ff,0 0 60px rgba(77,166,255,0.4);
+background-color:#71D4C0;
+color:#000;
 }
 
-#topBtn{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#00c6ff;
+.line:hover{
+color:#2C0EC2;
+text-decoration:underline;
+font-weight:900;
+transform: scale(1.05)
+}
+
+#dividing{
+height:3px;
+width:80%;
+margin:40px auto;
+background:linear-gradient(to right,transparent,#4da6ff,#ffffff,#4da6ff,transparent);
+border-radius:50px;
+}
+
+hr{
 border:none;
-color:black;
-padding:12px;
-border-radius:50%;
-cursor:pointer;
+height:2px;
+background:white;
+opacity:0.4;
+}
+
+
+
+.clock{
+font-size:30px;
+    color:#fff;
+    padding:30px 60px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+    letter-spacing:4px;
+    text-align:center;
+    font-family: 'Digital-7';
+}
+
+@font-face {
+  font-family: 'Digital-7';
+  src: url('digital-7.ttf');
+}
+
+
+.visitor-container{
+display:inline-block;
+margin-top:15px;
+padding:12px 20px;
+background:linear-gradient(135deg,#141e30,#243b55);
+border-radius:12px;
+box-shadow:0 6px 15px rgba(0,0,0,0.4);
 transition:0.3s;
-z-index:1000;
 }
 
-#topBtn:hover{
-background:#00ffff;
-transform:scale(1.1);
+.visitor-container:hover{
+transform:scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
 }
 
-.social{
-margin-top:25px;
+.visitor-text{
+color:#ffffff;
+font-size:15px;
+font-weight:700;
+margin-bottom:5px;
+letter-spacing:1px;
 }
 
-.social img{
-margin-right:15px;
-transition:0.3s;
-}
-
-.social img:hover{
-transform:scale(1.5);
+.visitor-badge{
+border-radius:8px;
 }
 
 .footer-section{
@@ -151,8 +265,86 @@ padding:18px;
 width:100%;
 letter-spacing:1px;
 }
+
+.footer-section p{
+color:#ffffff;
+margin:0;
+}
+  
+
+.social{
+margin-left:60px;
+}
+
+.social img{
+transition:0.3s ease;
+margin-right:15px;
+}
+
+.social img:hover{
+transform:scale(1.5);
+}
+
+.logos{
+ filter: invert(1);
+}
+
+
+.corner-name{
+position:fixed;
+bottom:15px;
+right:20px;
+font-size:16px;
+font-weight:700;
+color:#ffffff;
+background:linear-gradient(90deg,#141e30,#243b55);
+padding:8px 14px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+letter-spacing:1px;
+transition:0.3s;
+}
+
+.corner-name:hover{
+transform:scale(1.08);
+background:#0072ff;
+color:black;
+}
+
+
+
+
+i{
+margin-right:8px;
+}
+
+
+#topBtn{
+position:fixed;
+bottom:70px;
+right:30px;
+padding:12px 16px;
+font-size:18px;
+border:none;
+border-radius:50%;
+background:#0072ff;
+color:white;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+display:block;
+transition:0.3s;
+z-index:1000;
+}
+
+#topBtn:hover{
+background:#00c6ff;
+transform:scale(1.1);
+}
+
+ 
 </style>
 </head>
+
 <body>
 
 <div class="navbar">
@@ -162,55 +354,114 @@ letter-spacing:1px;
 <a href="https://github.com/TahaAnsari5359/Coding-Projects" target="_blank"><i class="fa-solid fa-laptop-code"></i>Projects</a>
 <a href="top_creations.html"><i class="fa-solid fa-star"></i>My Top Creations</a>
 <a href="stats.html"><i class="fa-solid fa-chart-line"></i>Developer Stats</a>
-<a href="tahacvanther.pdf" target="_blank"><i class="fa-solid fa-file"></i>Resume</a>
-<a href="contacts.html"><i class="fa-solid fa-envelope"></i>Contact</a>
+<a href="tahacvanther.pdf" target="_blank"><i class="fa-solid fa-file"></i>  Resume </a>
+<a href="contacts.html"><i class="fa-solid fa-envelope"></i> Contact</a>
 </div>
 
-<div class="container">
-<div class="top-section">
+
+
+
+
+
+ 
 <div id="clock" class="clock"></div>
-<div id="date" class="date"></div>
-</div>
 
-<h1>Taha Ansari</h1>
-<h3 class="subtitle">Future Software Developer</h3>
+<hr>
 
-<h2>About Me</h2>
+<center>
 
-<div class="content">
-<p>I am a student passionate about Computer Science and coding.</p>
-<p>I enjoy building websites and applications.</p>
-<p>Currently learning HTML, CSS, Python, and C++.</p>
-<p>My goal is to become a skilled software developer.</p>
-<p>I love solving problems and creating projects.</p>
-<p>Through this website, I share my journey and projects.</p>
-</div>
-
-<div class="social">
-<a href="https://www.linkedin.com/in/taha-ansari-72972a383/" target="_blank">
-<img src="linkedin.png" height="42" width="40">
-</a>
-<a href="https://github.com/TahaAnsari5359" target="_blank">
-<img src="github.png" height="42" width="40">
-</a>
-</div>
-</div>
+<h1>Taha Ansari | FUTURE SOFTWARE DEVELOPER</h1>
 
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
 
+
+<hr id="dividing">
+<h2>Hi, I'm Taha Ansari</h2>
+<div id="content">
+
+
+
+<p class="line">
+I am a student who is passionate about Computer Science and coding.
+I enjoy learning how websites and software are built.
+</p>
+
+<p class="line">
+Coding makes me excited because it allows me to create new things and solve problems.
+</p>
+
+<p class="line">
+I am currently learning HTML, CSS, Python, C++ and other programming languages step by step.
+</p>
+
+<p class="line">
+My goal is to become a skilled software developer in the future.
+</p>
+
+<p class="line">
+I believe in learning continuously and improving myself every day.
+</p>
+
+<p class="line">
+Through this website, I want to share my journey, my projects, and my progress
+as I grow in the world of technology.
+</p>
+
+<p class="line">
+I have created many projects based on the Python library called Tkinter
+that can create GUI applications.
+</p>
+
+<p class="line">
+If you want to rate my applications, you can visit my GitHub profile on the Home page.
+</p>
+
+</div>
+
+</center>
+
+<br>
+
+
+<div class="social">
+<a href="https://www.linkedin.com/in/taha-ansari-72972a383/" target="_blank" >
+<img src="linkedin.png" height="42" width="40">
+</a>
+
+
+<a href="https://github.com/TahaAnsari5359" target="_blank" >
+<img src="github.png" height="42" width="40" class="logos">
+</a>
+</div>
+
+
+<div class="corner-name">
+Taha Portfolio
+</div>
+
 <div class="footer-section">
-<p>© 2026 All rights reserved<br>Designed and Developed by Taha</p>
+<p>© 2026 All right reserved<br>
+  Designed and Developed by Taha</p>
 </div>
 
 <script>
 function updateTime(){
 const now = new Date();
-document.getElementById("clock").innerText = now.toLocaleTimeString();
-document.getElementById("date").innerText = now.toDateString();
+const time = now.toLocaleTimeString();
+document.getElementById("clock").innerText = time;
 }
 setInterval(updateTime,1000);
 updateTime();
+
+
+
+
+
+
+ 
 </script>
 
 </body>
 </html>
+
+
