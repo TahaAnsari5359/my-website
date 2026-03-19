@@ -54,28 +54,21 @@ a#header:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start;
     gap: 40px;
-	align-items: center;
 }
 
-
-.project {
+.project, .javaproject {
     display: none;
-    margin-top: 10px;
-    text-align: center;
-    margin: 20px;
-}
-
-.javaproject{
-display:none;
-}
-
-
-.project img {
     width: 350px;
+    text-align: center;
+}
+
+.project img, .javaproject img {
+    width: 100%;
+    height: auto;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
 }
 
 .project img:hover {
@@ -273,7 +266,10 @@ function fetchopt() {
     for (let i = 0; i < j.length; i++) j[i].style.display = "block";
   }
 }
-
+window.onload = function () {
+  document.getElementById("menu").value = "all";
+  fetchopt();
+};
 
 </script>
 
