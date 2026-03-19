@@ -198,7 +198,53 @@ background:#00c6ff;
 transform:scale(1.1);
 }
 
+.select-box {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
 
+/* Custom Select */
+.select-box select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: linear-gradient(135deg, #1f1c2c, #302b63);
+    color: white;
+    padding: 12px 40px 12px 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.2);
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+    min-width: 180px;
+}
+
+/* Hover effect */
+.select-box select:hover {
+    box-shadow: 0 0 12px rgba(0, 229, 255, 0.5);
+    transform: scale(1.05);
+}
+
+/* Arrow icon */
+.select-box::after {
+    content: "▼";
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00e5ff;
+    pointer-events: none;
+    font-size: 12px;
+}
+
+/* Focus */
+.select-box select:focus {
+    border-color: #00e5ff;
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.6);
+}
 		
         
     </style>
@@ -290,12 +336,13 @@ window.onload = function () {
 
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
 	
-<select id="menu">
-<option value="all"> All </option>
-
-<option value="python"> Python </option>
-<option value="java"> JavaScript </option>
-</select>
+<div class="select-box">
+    <select id="menu">
+        <option value="all">All</option>
+        <option value="python">Python</option>
+        <option value="java">JavaScript</option>
+    </select>
+</div>
 <br>
 <br>
 
