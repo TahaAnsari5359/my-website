@@ -57,12 +57,18 @@ a#header:hover {
     gap: 40px;
 }
 
+
 .project {
-    display: block;
+    display: none;
     margin-top: 10px;
     text-align: center;
     margin: 20px;
 }
+
+.javaproject{
+display:none;
+}
+
 
 .project img {
     width: 350px;
@@ -244,7 +250,28 @@ function desc9(){
 alert("A simple JavaScript calculator to perform addition, subtraction, multiplication, and division. Enter two numbers and choose an operator to get the result instantly.")
 }
 
+function fetchopt() {
 
+  let val = document.getElementById("menu").value;
+
+  let p = document.getElementsByClassName("project");
+  let j = document.getElementsByClassName("javaproject");
+
+  if (val == "all") {
+    for (let i = 0; i < p.length; i++) p[i].style.display = "block";
+    for (let i = 0; i < j.length; i++) j[i].style.display = "block";
+  }
+
+  else if (val == "python") {
+    for (let i = 0; i < p.length; i++) p[i].style.display = "block";
+    for (let i = 0; i < j.length; i++) j[i].style.display = "none";
+  }
+
+  else if (val == "java") {
+    for (let i = 0; i < p.length; i++) p[i].style.display = "none";
+    for (let i = 0; i < j.length; i++) j[i].style.display = "block";
+  }
+}
 
 
 </script>
@@ -266,6 +293,17 @@ alert("A simple JavaScript calculator to perform addition, subtraction, multipli
 
 <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆</button>
 	
+<select id="menu">
+<option value="all"> All </option>
+
+<option value="python"> Python </option>
+<option value="java"> JavaScript </option>
+</select>
+<br>
+<br>
+
+<button onclick="fetchopt()"> Filter </button>
+
 
 <div class="projects-container">
 
@@ -318,13 +356,12 @@ alert("A simple JavaScript calculator to perform addition, subtraction, multipli
     </div>
 
 
-    <div class="project">
+    <div class="javaproject">
         <img src="js_calculator.png" alt="java script calculator" height="450" width="350">
         <a href="https://github.com/TahaAnsari5359/JavaScript-HTML-CSS___/blob/main/js_calculator/calculator.html" target="_blank" class="source">View Source Code</a>
 	<a href="javascript:void(0)" onclick="desc9()" class="source">Description</a>
 		<a href="caalculator.html" class="source" target="_blank"> View Live Program </a>
     </div>
-
     
 
     
