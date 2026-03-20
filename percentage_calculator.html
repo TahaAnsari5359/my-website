@@ -1,0 +1,175 @@
+<html>
+<head>
+<title> Percentage Calculator </title>
+</head>
+
+<style>
+
+
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: black;
+}
+
+h1{
+color:white;
+}
+
+label{
+font-size:25px;
+}
+
+.card {
+  width: 430px;
+height:720px;
+  padding: 25px;
+  border-radius: 15px;
+  background-color: #EBB85A;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+
+}
+
+input[type="number"] {
+  width: 100%;
+  height: 35px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: none;
+  padding-left: 10px;
+  transition: 0.3s;
+text-align:center;
+font-size:24px;
+}
+
+input[type="number"]:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+font-size:25px;
+}
+
+button:hover {
+  background: #000;
+transform: scale(1.05);
+}
+
+p{
+font-weight:900;
+font-size:20px;
+
+
+}
+
+
+
+</style>
+
+
+
+<script>
+
+
+function calcu(){
+
+
+let n1 = Number(document.getElementById("num1").value);
+
+let n2 = Number(document.getElementById("num2").value);
+let n3 = Number(document.getElementById("num3").value);
+let n4 = Number(document.getElementById("num4").value);
+let n5 = Number(document.getElementById("num5").value);
+let n6 = Number(document.getElementById("num6").value);
+
+let total = n1+n2+n3+n4+n5+n6;
+let form = (total / 600) * 100;
+
+
+
+let grade = "";
+
+if (form >= 90) {
+  grade = "A+";
+} else if (form >= 75) {
+  grade = "A";
+} else if (form >= 60) {
+  grade = "B";
+} else if (form >= 40) {
+  grade = "C";
+} else {
+  grade = "Fail";
+}
+
+
+
+
+document.getElementById("data").innerHTML = `Percent: ${form.toFixed(2)}%`;
+document.getElementById("grades").innerHTML=`Grade: ${grade}`;
+
+}
+
+function clr(){
+document.getElementById("num1").value="";
+
+document.getElementById("num2").value="";
+
+document.getElementById("num3").value="";
+document.getElementById("num4").value="";
+document.getElementById("num5").value="";
+document.getElementById("num6").value="";
+document.getElementById("data").innerHTML="";
+}
+
+
+</script>
+<body>
+<center>
+<h1> Percentage Calculator </h1>
+
+<div class="card">
+<label> English </label>
+<input type="number" id="num1"> 
+
+<br>
+
+<label> Hindi </label>
+<input type="number" id="num2">  <br>
+
+<label> Marathi </label>
+<input type="number" id="num3">  <br>
+
+<label> maths </label>
+<input type="number" id="num4"> <br>
+
+
+<label> science </label>
+<input type="number" id="num5"> <br>
+
+<label> Geography </label>
+<input type="number" id="num6"> <br>
+
+
+<p id="data">  </p>
+<p id="grades"> </p>
+<button onclick="calcu()"> calculate </button>
+
+<button onclick="clr()"> clear </button>
+
+
+</div>
+</center>
+
+
+
+</body>
+</html>
