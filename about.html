@@ -35,15 +35,25 @@ body {
 }
 
 .nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 12px 25px;
+  color: white;
   text-decoration: none;
-  color: #e3f2fd; 
-  font-weight: bold;
-  font-size: 17px;
-  padding: 8px 18px;
-  border-radius: 8px;
+  font-weight: 600;
   transition: 0.3s;
+  
+  background: #243b55;
+  
+  clip-path: polygon(
+    25% 0%, 
+    75% 0%, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0% 50%
+  );
 }
-
 .nav-link:hover {
   background: #0d47a1; 
   color: white;
