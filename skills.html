@@ -37,14 +37,7 @@ box-shadow:0 5px 15px rgba(0,0,0,0.4);
 position:sticky;
 top:0;
 
-  clip-path: polygon(
-    25% 0%, 
-    75% 0%, 
-    100% 50%, 
-    75% 100%, 
-    25% 100%, 
-    0% 50%
-  );
+
 }
 
 
@@ -52,13 +45,24 @@ top:0;
   
 
 .navbar a{
-color:white;
-text-decoration:none;
-font-weight:600;
-letter-spacing:1px;
-padding:8px 18px;
-border-radius:6px;
-transition:0.3s;
+position: relative;
+display: inline-block;
+padding: 12px 25px;
+color: white;
+text-decoration: none;
+font-weight: 600;
+font-size: 14px;
+transition: 0.3s;
+background: #243b55;
+
+clip-path: polygon(
+    25% 0%, 
+    75% 0%, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0% 50%
+);
 }
 
 .navbar a:hover{
