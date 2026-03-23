@@ -77,26 +77,30 @@ position:sticky;
 top:0;
 z-index:1000;
 
-  clip-path: polygon(
-    25% 0%, 
-    75% 0%, 
-    100% 50%, 
-    75% 100%, 
-    25% 100%, 
-    0% 50%
-  );
+
 }
   
 
 
 .navbar a{
-font-size:18px;
-font-weight:600;
-text-decoration:none;
-padding:8px 18px;
-border-radius:6px;
-transition:0.3s;
-color:white;
+position: relative;
+display: inline-block;
+padding: 12px 25px;
+font-size: 16px;
+font-weight: 600;
+color: white;
+text-decoration: none;
+background: #243b55;
+transition: 0.3s;
+
+clip-path: polygon(
+  25% 0%, 
+  75% 0%, 
+  100% 50%, 
+  75% 100%, 
+  25% 100%, 
+  0% 50%
+);
 }
 
 .navbar a:hover{
