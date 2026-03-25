@@ -127,18 +127,19 @@ z-index:1000;
   text-decoration: none;
   font-weight: 600;
   transition: 0.3s;
-  
+
   background: #243b55;
 
-  clip-path: path("M25% 5% 
-                   Q50% 0% 75% 5% 
-                   Q100% 30% 100% 50% 
-                   Q100% 70% 75% 95% 
-                   Q50% 100% 25% 95% 
-                   Q0% 70% 0% 50% 
-                   Q0% 30% 25% 5% Z");
+  /* PERFECT SHARP HEXAGON */
+  clip-path: polygon(
+    25% 0%, 
+    75% 0%, 
+    100% 50%, 
+    75% 100%, 
+    25% 100%, 
+    0% 50%
+  );
 }
-
 .navbar a:hover{
 background:#0072ff;
 transform:scale(1.08);
