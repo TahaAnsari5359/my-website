@@ -130,16 +130,16 @@ z-index:1000;
   
   background: #243b55;
   
-  clip-path: polygon(
-    25% 0%, 
-    75% 0%, 
-    100% 50%, 
-    75% 100%, 
-    25% 100%, 
-    0% 50%
-  );
- border-radius: 10px;
-}
+clip-path: path("M25% 5% 
+                   Q50% 0% 75% 5% 
+                   Q100% 30% 100% 50% 
+                   Q100% 70% 75% 95% 
+                   Q50% 100% 25% 95% 
+                   Q0% 70% 0% 50% 
+                   Q0% 30% 25% 5% Z")
+
+};
+
 
 .navbar a:hover{
 background:#0072ff;
