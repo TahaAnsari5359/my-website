@@ -170,29 +170,33 @@ text-decoration:underline;
 p{
 font-size:20px;
 line-height:1.8;
-color:#2c2c2c;
+color:#e0e0e0;
 transition: 0.3s ease;
 }
 
 #content{
-background:white;
-padding:30px;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
+background: rgba(255,255,255,0.08);
+padding: 30px;
+border-radius: 18px;
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+box-shadow: 0 8px 30px rgba(0,0,0,0.4);
 transition: all 0.4s ease;
-max-width:800px;
-margin:30px auto;
+max-width: 800px;
+margin: 30px auto;
+border: 1px solid rgba(255,255,255,0.15);
+color: #eaeaea;
+}
 
+#content:hover{
+transform: translateY(-8px) scale(1.02);
+box-shadow: 0 0 25px rgba(0,255,255,0.6),
+            0 0 60px rgba(0,255,255,0.2);
+border: 1px solid rgba(0,255,255,0.5);
+background: rgba(255,255,255,0.12);
 }
 
  
-#content:hover{
-transform:scale(1.02);
-box-shadow:0 0 25px #4da6ff,0 0 60px rgba(77,166,255,0.4);
-background-color:#71D4C0;
-color:#000;
-}
-
 .line:hover{
 color:#2C0EC2;
 text-decoration:underline;
