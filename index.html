@@ -138,13 +138,31 @@ color:black;
 }
 
 
-button {
+.menu-btn {
   margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 20px;
+  padding: 12px 18px;
+  font-size: 22px;
   cursor: pointer;
+
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 12px;
+  color: white;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
 }
 
+/* hover effect */
+.menu-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,114,255,0.6);
+}
+
+/* click effect */
+.menu-btn:active {
+  transform: scale(0.95);
+}
 
 
 h1{
@@ -438,7 +456,7 @@ transform:scale(1.1);
 
 </div>
 
-<button onclick="toggleMenu()">☰ Menu</button>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
 
 
 
