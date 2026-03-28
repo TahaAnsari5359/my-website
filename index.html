@@ -95,7 +95,7 @@ from{width:0;}
 to{width:100%;}
 }
 
-.navbar{
+#navbar{
 width:100%;
 padding:15px 0;
 background:linear-gradient(90deg,#141e30,#243b55);
@@ -103,13 +103,16 @@ box-shadow:0 5px 15px rgba(0,0,0,0.4);
 display:flex;
 justify-content:center;
 gap:35px;
-position:sticky;
-top:0;
+position: fixed;   
+top: -100px;      
+left: 0;
+
 z-index:1000;
+transition: top 0.4s ease;
 
 }
 
-.navbar a {
+#navbar a {
   position: relative;
   display: inline-block;
   padding: 12px 25px;
@@ -128,11 +131,21 @@ z-index:1000;
   0% 70%, 0% 30%
   );
 }
-.navbar a:hover{
+#navbar a:hover{
 background:#0072ff;
 transform:scale(1.08);
 color:black;
 }
+
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
 
 h1{
 font-size:38px;
@@ -415,7 +428,7 @@ transform:scale(1.1);
 
 <body>
 
-<div class="navbar">
+<div id="navbar">
 <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
 <a href="about.html"><i class="fa-solid fa-user"></i>About</a>
 <a href="skills.html"><i class="fa-solid fa-screwdriver-wrench"></i>Skills</a>
@@ -425,7 +438,7 @@ transform:scale(1.1);
 
 </div>
 
-
+<button onclick="toggleMenu()">☰ Menu</button>
 
 
 
@@ -546,6 +559,15 @@ setInterval(updateTime,1000);
 updateTime();
 
 
+function toggleMenu() {
+  let menu = document.getElementById("navbar");
+  
+  if (menu.style.top === "0px") {
+    menu.style.top = "-100px";
+  } else {
+    menu.style.top = "0px";
+  }
+}
 
 
 
