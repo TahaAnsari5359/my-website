@@ -13,7 +13,7 @@
 
 
 <title>Taha's Portfolio | Taha's Website & Web Developer Page</title>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -69,7 +69,7 @@ body{
 margin:0;
 padding:0;
 font-family:'Segoe UI', sans-serif;
-background-image:url("bg_image.png");
+
 background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
@@ -441,10 +441,107 @@ transform:scale(1.1);
     0 0 15px rgba(0,255,255,0.5);
 }
  
+
+
+
+
+
+/* Boot strap css for background */
+
+#bgCarousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+#bgCarousel .carousel-inner,
+#bgCarousel .carousel-item,
+#bgCarousel img {
+  width: 100%;
+  height: 100%;
+}
+
+#bgCarousel img {
+  object-fit: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+/* Boot strap css for background */
+
+
+
+
+
 </style>
 </head>
 
 <body>
+
+
+
+<!-- Boot strap for background -->
+<div id="bgCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+    </div>
+
+
+    
+<div class="carousel-item">
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" class="d-block w-100">
+</div>
+
+<div class="carousel-item ">
+  <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+  <img src="https://images.unsplash.com/photo-1504639725590-34d0984388bd" class="d-block w-100">
+</div>
+
+<div class="carousel-item">
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="d-block w-100">
+</div>
+
+  </div>
+</div>
+
+<!-- Boot strap for background -->
+
+
+
+
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Welcome</strong> Welcome To Taha's Portfolio Website
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+
+
+
+
 
 <div id="navbar">
 <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
@@ -594,6 +691,7 @@ function toggleMenu() {
 </script>
 
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
 
 
