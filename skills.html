@@ -13,7 +13,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Skills</title>
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 <style>
 
 body{
@@ -136,33 +136,6 @@ animation:load 2s ease forwards;
 
 }
 
-.python{
-width:90%;
-background:linear-gradient(90deg,#28a745,#5dd879);
-}
-
-
-.cpp{
-width:50%;
-background:linear-gradient(90deg,#dc3545,#ff6b81);
-}
-
-.html{
-width:70%;
-background:linear-gradient(90deg,#e44d26,#f16529);
-}
-
-.css{
-width:60%;
-background:linear-gradient(90deg,#264de4,#3796ff);
-}
-
-.js{
-width:15%;
-background:linear-gradient(90deg,#C8D921,#E3FA00);
-color:black;
-}
-
   
 
 @keyframes load{
@@ -178,11 +151,7 @@ margin-top:0;
 }
 
 
-@keyframes bgGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
+
 
 i{
 margin-right:8px;
@@ -239,49 +208,43 @@ transform:scale(1.1);
 
 
 
+<p class="mb-1 fw-bold">PYTHON</p>
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped bg-success" style="width: 90%">
+    90%
+  </div>
+</div>
 
-  
-<div class="skill">
-<div class="skill-name">Python</div>
+<p class="mb-1 fw-bold">C++</p>
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped bg-warning" style="width: 50%">
+    50%
+  </div>
+</div>
+
+<p class="mb-1 fw-bold">HTML</p>
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped bg-info" style="width: 70%">
+    70%
+  </div>
+</div>
+
+<p class="mb-1 fw-bold">CSS</p>
+<div class="progress mb-3">
+  <div class="progress-bar progress-bar-striped custom-60" style="width: 60%">
+    60%
+  </div>
+</div>
+
+<p class="mb-1 fw-bold">JAVA SCRIPT</p>
 <div class="progress">
-<div class="progress-bar python">90%</div>
+  <div class="progress-bar progress-bar-striped bg-danger" style="width: 15%">
+    15%
+  </div>
 </div>
-</div>
-
-
-  
-<div class="skill">
-<div class="skill-name">C++</div>
-<div class="progress">
-<div class="progress-bar cpp">50%</div>
-</div>
-</div>
-
-<div class="skill">
-<div class="skill-name">HTML</div>
-<div class="progress">
-<div class="progress-bar html">70%</div>
-</div>
-</div>
-
-<div class="skill">
-<div class="skill-name">CSS</div>
-<div class="progress">
-<div class="progress-bar css">60%</div>
-</div>
-</div>
-
-<div class="skill">
-<div class="skill-name">JAVASCRIPT</div>
-<div class="progress">
-<div class="progress-bar js">15%</div>
-</div>
-</div>
-
-
   
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
 
